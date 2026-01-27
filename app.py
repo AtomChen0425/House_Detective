@@ -4,10 +4,15 @@ from bson import json_util
 from flask_cors import CORS
 import json
 import datetime
+import os
 app = Flask(__name__)
 CORS(app)
+mongo_uri = os.getenv(
+    "MONGO_URI",
+    "mongodb://mongo:27017/" 
+)
 # 数据库连接
-client = MongoClient("mongodb://192.168.2.24:27017/")
+client = MongoClient(mongo_uri)
 db = client.House_Analysis_Canada
 
 @app.route('/')

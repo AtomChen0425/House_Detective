@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+
+  house-api:
+    build: .
+    image: house-detective-base:latest
+    container_name: house-detective-flask
+    environment:
+      - MONGO_URI=mongodb://mongo:27017
+    ports:
+      - "7831:5000"
+    networks:
+      - mongoDB
+    restart: unless-stopped
+    command: python app.py  
+
+  house-crawler:
+    image: house-detective-base:latest
+    container_name: house-detective-crawler
+    environment:
+      - MONGO_URI=mongodb://mongo:27017
+    networks:
+      - mongoDB
+
+    command: python CrawlerSchedule.py 
+    profiles:
+      - manual 
+
+networks:
+  mongoDB:
+    external: true
