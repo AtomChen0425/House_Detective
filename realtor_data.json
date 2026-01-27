@@ -1,0 +1,5259 @@
+{
+  "ErrorCode": {
+    "Id": 200,
+    "Description": "Success - OK",
+    "Status": "Pins-Via-Cache:false;Sidebar-Items-Via-Cache:0;",
+    "ProductName": "Realtor API 7 | 20260114.2 | 5cf423a7a3d5840fafc7397bafa082a37263a77a | Wednesday, January 14, 2026 8:36:46 AM",
+    "Version": "1.0.9510.24516"
+  },
+  "Paging": {
+    "RecordsPerPage": 12,
+    "CurrentPage": 1,
+    "TotalRecords": 456,
+    "MaxRecords": 600,
+    "TotalPages": 38,
+    "RecordsShowing": 456,
+    "Pins": 456
+  },
+  "Results": [
+    {
+      "Id": "29291771",
+      "MlsNumber": "C12731014",
+      "PublicRemarks": "Luxury Condo in Downtown Core at the Financial and Entertainment District With Large Balcony, One Parking and Locker. Steps From the Subway, Shopping, University, Hospital, and Art Galleries. Great Amenities Include Gym, Sauna, Steam Room, Billiards, Rooftop Deck, Party Room, Guest Suites, and 24-Hour Security. Built-In Fridge, Stovetop, Dishwasher, Washer & Dryer, Electrical Light Fixtures, and Window Coverings. (42022785)",
+      "Building": {
+        "BathroomTotal": "2",
+        "Bedrooms": "1 + 1",
+        "SizeInterior": "65.0316 m2",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "Ammenities": "Security/Concierge, Exercise Centre, Recreation Centre, Storage - Locker",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "700+ sqft",
+            "AreaUnformatted": "700-799 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ]
+      },
+      "Individual": [
+        {
+          "IndividualID": 2129216,
+          "Name": "KASHIF SEAR",
+          "Organization": {
+            "OrganizationID": 275784,
+            "Name": "ROYAL LEPAGE SIGNATURE REALTY",
+            "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638852596800000000/lowres/1268183.jpg",
+            "Address": {
+              "AddressText": "201-30 EGLINTON AVE WEST|MISSISSAUGA, Ontario L5R3E7",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "568-2121",
+                "AreaCode": "905",
+                "PhoneTypeId": "1"
+              },
+              {
+                "PhoneType": "Fax",
+                "PhoneNumber": "568-2588",
+                "AreaCode": "905",
+                "PhoneTypeId": "4"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/275784/royal-lepage-signature-realty-201-30-eglinton-ave-west-mississauga-ontario-l5r3e7",
+            "PhotoLastupdate": "2025-06-11 5:28:00 PM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "568-2121",
+              "AreaCode": "905",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577293910"
+            }
+          ],
+          "Position": "Salesperson",
+          "PermitFreetextEmail": true,
+          "FirstName": "KASHIF",
+          "LastName": "SEAR",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/2129216/kashif-sear-201-30-eglinton-ave-west-mississauga-ontario-l5r3e7",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "Price": "$624,900",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "618 - 199 RICHMOND STREET W|Toronto (Waterfront Communities), Ontario M5V0H4",
+          "Longitude": "-79.3884806",
+          "Latitude": "43.6494186",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639050491376800000/reb82/highres/4/c12731014_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639050491376800000/reb82/medres/4/c12731014_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639050491376800000/reb82/lowres/4/c12731014_1.jpg",
+            "LastUpdated": "2026-01-26 6:32:17 PM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "Underground"
+          },
+          {
+            "Name": "Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "1",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "Underground, Garage",
+        "PriceUnformattedValue": "624900",
+        "ShortValue": "625K",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "PostalCode": "M5V0H4",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29291771/618-199-richmond-street-w-toronto-waterfront-communities-waterfront-communities-c1",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 11:32:17 PM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29291771/618-199-richmond-street-w-toronto-waterfront-communities-waterfront-communities-c1",
+      "RelativeURLFr": "/immobilier/29291771/618-199-richmond-street-w-toronto-waterfront-communities",
+      "Media": [],
+      "InsertedDateUTC": "639050671376730000",
+      "TimeOnRealtor": "1 hour ago",
+      "Tags": [
+        {
+          "Label": "1 hour ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 82
+    },
+    {
+      "Id": "29291568",
+      "MlsNumber": "C12730890",
+      "PublicRemarks": "Rarely available, oversized downtown unit located in the heart of Chinatown, offering stunning CN Tower views and just steps to the Financial District. Fully gutted to the studs and completely renovated in 2020 with high-end finishes throughout. Heated floors in the primary ensuite bathroom, generous open-concept living space, and a heat-pump system dedicated to the unit. Some windows have been recently upgraded. Includes one parking space. Exciting new subway station currently under construction nearby, adding long-term value and exceptional convenience. A truly unique downtown opportunity. (42022458)",
+      "Building": {
+        "BathroomTotal": "2",
+        "Bedrooms": "2",
+        "SizeInterior": "111.4827 m2",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "Ammenities": "Exercise Centre, Party Room, Security/Concierge",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "1200+ sqft",
+            "AreaUnformatted": "1200-1399 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ]
+      },
+      "Individual": [
+        {
+          "IndividualID": 2082998,
+          "Name": "AMIR KAMALI",
+          "Organization": {
+            "OrganizationID": 285897,
+            "Name": "NEW ERA REAL ESTATE",
+            "Address": {
+              "AddressText": "171 LAKESHORE RD E #14|MISSISSAUGA, Ontario L5G4T9",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "508-9929",
+                "AreaCode": "416",
+                "PhoneTypeId": "1"
+              }
+            ],
+            "Emails": [
+              {
+                "ContactId": "472368372"
+              }
+            ],
+            "Websites": [
+              {
+                "Website": "HTTP://www.newerarealestate.ca",
+                "WebsiteTypeId": "1"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "HasEmail": true,
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/285897/new-era-real-estate-171-lakeshore-rd-e-14-mississauga-ontario-l5g4t9",
+            "PhotoLastupdate": "2021-07-20 1:56:00 PM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "508-9929",
+              "AreaCode": "416",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577250712"
+            }
+          ],
+          "Photo": "https://cdn.realtor.ca/individual/TS638796283800000000/lowres/1357763.jpg",
+          "Position": "Salesperson",
+          "PermitFreetextEmail": true,
+          "FirstName": "AMIR",
+          "LastName": "KAMALI",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/2082998/amir-kamali-171-lakeshore-rd-e-14-mississauga-ontario-l5g4t9",
+          "AgentPhotoLastUpdated": "2025-04-07 13:13:00",
+          "PhotoHighRes": "https://cdn.realtor.ca/individual/TS638796283800000000/highres/1357763.jpg",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "Price": "$1,049,998",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "502 - 188 SPADINA AVENUE|Toronto (Kensington-Chinatown), Ontario M5T3A4",
+          "Longitude": "-79.3972556",
+          "Latitude": "43.6497595",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639050473594030000/reb82/highres/0/c12730890_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639050473594030000/reb82/medres/0/c12730890_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639050473594030000/reb82/lowres/0/c12730890_1.jpg",
+            "LastUpdated": "2026-01-26 6:02:39 PM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "Underground"
+          },
+          {
+            "Name": "Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "1",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "Underground, Garage",
+        "PriceUnformattedValue": "1049998",
+        "ShortValue": "1.05M",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "PostalCode": "M5T3A4",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29291568/502-188-spadina-avenue-toronto-kensington-chinatown-kensington-chinatown",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 11:02:39 PM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29291568/502-188-spadina-avenue-toronto-kensington-chinatown-kensington-chinatown",
+      "RelativeURLFr": "/immobilier/29291568/502-188-spadina-avenue-toronto-kensington-chinatown",
+      "Media": [],
+      "InsertedDateUTC": "639050653593900000",
+      "TimeOnRealtor": "1 hour ago",
+      "Tags": [
+        {
+          "Label": "1 hour ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 82
+    },
+    {
+      "Id": "29291152",
+      "MlsNumber": "C12730636",
+      "PublicRemarks": "This sun-filled corner suite at 87 Peter Street offers an exceptional opportunity to own a beautifully laid-out one-bedroom in the heart of downtown Toronto. Wrapped in floor-to-ceiling windows, the unit is flooded with natural light throughout the day, creating a warm and open living space that feels both comfortable and sophisticated. The building offers impressive amenities, including a standout spa area that feels like a private retreat after a long day. With low maintenance fees that include heat, water, and air conditioning, this home is as practical as it is appealing. Perfectly positioned in the Entertainment District, you're steps to grocery stores, acclaimed restaurants, nightlife, and everyday essentials, with streetcar service at your door and subway access just a short walk away. (42021788)",
+      "Building": {
+        "BathroomTotal": "1",
+        "Bedrooms": "1",
+        "SizeInterior": "46.4511 m2",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "500+ sqft",
+            "AreaUnformatted": "500-599 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ]
+      },
+      "Individual": [
+        {
+          "IndividualID": 2193466,
+          "Name": "DANIELLE POISSANT",
+          "Organization": {
+            "OrganizationID": 275438,
+            "Name": "PROPERTY.CA INC.",
+            "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638852596800000000/lowres/1265158.jpg",
+            "Address": {
+              "AddressText": "36 DISTILLERY LANE UNIT 500|TORONTO, Ontario M5A3C4",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "583-1660",
+                "AreaCode": "416",
+                "PhoneTypeId": "1"
+              },
+              {
+                "PhoneType": "Fax",
+                "PhoneNumber": "352-1740",
+                "AreaCode": "416",
+                "PhoneTypeId": "4"
+              }
+            ],
+            "Emails": [
+              {
+                "ContactId": "567618704"
+              }
+            ],
+            "Websites": [
+              {
+                "Website": "http://www.property.ca/",
+                "WebsiteTypeId": "1"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "HasEmail": true,
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/275438/propertyca-inc-36-distillery-lane-unit-500-toronto-ontario-m5a3c4",
+            "PhotoLastupdate": "2025-06-11 5:28:00 PM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "583-1660",
+              "AreaCode": "416",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577384787"
+            }
+          ],
+          "Position": "Salesperson",
+          "PermitFreetextEmail": true,
+          "FirstName": "DANIELLE",
+          "LastName": "POISSANT",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/2193466/danielle-poissant-36-distillery-lane-unit-500-toronto-ontario-m5a3c4",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "Price": "$490,000",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "1713 - 87 PETER STREET|Toronto (Waterfront Communities), Ontario M5V0P1",
+          "Longitude": "-79.3924385",
+          "Latitude": "43.6468743",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639050419253970000/reb82/highres/6/c12730636_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639050419253970000/reb82/medres/6/c12730636_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639050419253970000/reb82/lowres/6/c12730636_1.jpg",
+            "LastUpdated": "2026-01-26 4:32:05 PM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "No Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "0",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "AmmenitiesNearBy": "Public Transit, Schools, Hospital, Park, Place of Worship",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "No Garage",
+        "PriceUnformattedValue": "490000",
+        "ShortValue": "490K",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "AlternateURL": {
+        "VideoLink": "https://propertyca.pvapps.ca/property-website/16206"
+      },
+      "PostalCode": "M5V0P1",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29291152/1713-87-peter-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 9:32:05 PM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29291152/1713-87-peter-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "RelativeURLFr": "/immobilier/29291152/1713-87-peter-street-toronto-waterfront-communities",
+      "Media": [
+        {
+          "MediaCategoryId": "2",
+          "MediaCategoryURL": "https://propertyca.pvapps.ca/property-website/16206",
+          "Description": "VideoTourWebsite",
+          "Order": 1,
+          "VideoType": "Other"
+        }
+      ],
+      "InsertedDateUTC": "639050599253900000",
+      "TimeOnRealtor": "3 hours ago",
+      "Tags": [
+        {
+          "Label": "3 hours ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 82
+    },
+    {
+      "Id": "29290396",
+      "MlsNumber": "C12730160",
+      "PublicRemarks": "Charlie Condos located in the heart of the Entertainment and Financial Districts.  Beautiful, spacious one bedroom + den, this unit shines. Incredible location, walking distance to restaurants, bars, nightlife and more.  Minutes to the Lake Shore and Gardiner Expressway.  Incredible amenities including 24hr Concierge, Gym, Games Room, Outdoor Pool, Party/Meeting Room, Rooftop Deck and Garden. Tenant Pays  electricity. Option for Parking $200/month (42020556)",
+      "Building": {
+        "BathroomTotal": "1",
+        "Bedrooms": "1 + 1",
+        "SizeInterior": "46.4511 m2",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "Ammenities": "Recreation Centre, Security/Concierge, Exercise Centre",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "500+ sqft",
+            "AreaUnformatted": "500-599 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ]
+      },
+      "Individual": [
+        {
+          "IndividualID": 1410199,
+          "Name": "SALVATORE BENEDETTO",
+          "Organization": {
+            "OrganizationID": 51341,
+            "Name": "HOMELIFE/5 STAR REALTY LTD.",
+            "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638852595600000000/lowres/1002636.jpg",
+            "Address": {
+              "AddressText": "845 WILSON AVE.|TORONTO, Ontario M3K1E6",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "633-6666",
+                "AreaCode": "416",
+                "PhoneTypeId": "1"
+              },
+              {
+                "PhoneType": "Fax",
+                "PhoneNumber": "633-8416",
+                "AreaCode": "416",
+                "PhoneTypeId": "4"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/51341/homelife5-star-realty-ltd-845-wilson-ave-toronto-ontario-m3k1e6",
+            "PhotoLastupdate": "2025-06-11 5:26:00 PM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "633-6666",
+              "AreaCode": "416",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "576841169"
+            }
+          ],
+          "Position": "Broker",
+          "PermitFreetextEmail": true,
+          "FirstName": "SALVATORE",
+          "LastName": "BENEDETTO",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/1410199/salvatore-benedetto-845-wilson-ave-toronto-ontario-m3k1e6",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "LeaseRent": "$2,595/Monthly",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "411 - 8 CHARLOTTE STREET|Toronto (Waterfront Communities), Ontario M5V0K4",
+          "Longitude": "-79.3939582",
+          "Latitude": "43.6460456",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639050347338330000/reb82/highres/0/c12730160_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639050347338330000/reb82/medres/0/c12730160_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639050347338330000/reb82/lowres/0/c12730160_1.jpg",
+            "LastUpdated": "2026-01-26 2:32:13 PM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "Underground"
+          },
+          {
+            "Name": "Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "0",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "Underground, Garage",
+        "LeaseRentUnformattedValue": "2595",
+        "ShortValue": "2.6K",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "AlternateURL": {
+        "VideoLink": "https://my.matterport.com/show/?m=SB5RJdwzN3m"
+      },
+      "PostalCode": "M5V0K4",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29290396/411-8-charlotte-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 7:32:13 PM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29290396/411-8-charlotte-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "RelativeURLFr": "/immobilier/29290396/411-8-charlotte-street-toronto-waterfront-communities",
+      "Media": [
+        {
+          "MediaCategoryId": "2",
+          "MediaCategoryURL": "https://my.matterport.com/show/?m=SB5RJdwzN3m",
+          "Description": "VideoTourWebsite",
+          "Order": 1,
+          "VideoType": "Matterport"
+        }
+      ],
+      "InsertedDateUTC": "639050527338170000",
+      "TimeOnRealtor": "5 hours ago",
+      "Tags": [
+        {
+          "Label": "5 hours ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 82
+    },
+    {
+      "Id": "29290003",
+      "MlsNumber": "C12729674",
+      "PublicRemarks": "Stunning northeast-facing 1+Den in the coveted M5V. Located in the heart of the Entertainment District, this spacious 747 sq ft suite features concrete ceilings, warm hardwood floors, two full bathrooms, and includes parking and a locker. The generously sized den is ideal for a home office or guest space. The primary bedroom offers a walk-in closet and 4-piece ensuite. Perfect Walk & Bike Score of 100- steps to transit, dining, nightlife, and everything downtown has to offer. (42019677)",
+      "Building": {
+        "BathroomTotal": "2",
+        "Bedrooms": "1 + 1",
+        "SizeInterior": "65.0316 m2",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "Ammenities": "Storage - Locker",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "700+ sqft",
+            "AreaUnformatted": "700-799 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ],
+        "HalfBathTotal": "1"
+      },
+      "Individual": [
+        {
+          "IndividualID": 1938278,
+          "Name": "KEYAH KAVOOSI",
+          "Organization": {
+            "OrganizationID": 293938,
+            "Name": "NORTH 2 SOUTH REALTY",
+            "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638852597400000000/lowres/1433323.jpg",
+            "Address": {
+              "AddressText": "3560 Rutherford Rd #43|VAUGHAN, Ontario L4H3T8",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "697-1400",
+                "AreaCode": "416",
+                "PhoneTypeId": "1"
+              }
+            ],
+            "Emails": [
+              {
+                "ContactId": "574150355"
+              }
+            ],
+            "Websites": [
+              {
+                "Website": "http://www.n2srb.com/",
+                "WebsiteTypeId": "1"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "HasEmail": true,
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/293938/north-2-south-realty-3560-rutherford-rd-43-vaughan-ontario-l4h3t8",
+            "PhotoLastupdate": "2025-06-11 5:29:00 PM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "697-1400",
+              "AreaCode": "416",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Websites": [
+            {
+              "Website": "http://www.keyahkavoosi.com/",
+              "WebsiteTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577051739"
+            }
+          ],
+          "Position": "Salesperson",
+          "PermitFreetextEmail": true,
+          "FirstName": "KEYAH",
+          "LastName": "KAVOOSI",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/1938278/keyah-kavoosi-3560-rutherford-rd-43-vaughan-ontario-l4h3t8",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "LeaseRent": "$3,000/Monthly",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "707 - 375 KING STREET W|Toronto (Waterfront Communities), Ontario M5V1K1",
+          "Longitude": "-79.3931607",
+          "Latitude": "43.6456255",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639050311580170000/reb82/highres/4/c12729674_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639050311580170000/reb82/medres/4/c12729674_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639050311580170000/reb82/lowres/4/c12729674_1.jpg",
+            "LastUpdated": "2026-01-26 1:32:38 PM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "Underground"
+          },
+          {
+            "Name": "Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "1",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "Underground, Garage",
+        "LeaseRentUnformattedValue": "3000",
+        "ShortValue": "3K",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "PostalCode": "M5V1K1",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29290003/707-375-king-street-w-toronto-waterfront-communities-waterfront-communities-c1",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 6:32:38 PM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29290003/707-375-king-street-w-toronto-waterfront-communities-waterfront-communities-c1",
+      "RelativeURLFr": "/immobilier/29290003/707-375-king-street-w-toronto-waterfront-communities",
+      "Media": [],
+      "InsertedDateUTC": "639050491580100000",
+      "TimeOnRealtor": "6 hours ago",
+      "Tags": [
+        {
+          "Label": "6 hours ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 82
+    },
+    {
+      "Id": "29289726",
+      "MlsNumber": "C12729596",
+      "PublicRemarks": "Welcome to the Picasso on Richmond! Enjoy vibrant city living with stunning balcony views from this well-appointed one-bedroom condo in the heart of the Entertainment District. Floor-to-ceiling windows flood the space with natural light, while a modern kitchen, ensuite laundry, and private east-facing balcony offer everyday comfort and convenience. Residents enjoy access to top-tier building amenities, all just steps from the city's best dining, nightlife and entertainment. (42019322)",
+      "Building": {
+        "BathroomTotal": "1",
+        "Bedrooms": "1",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "Ammenities": "Security/Concierge, Recreation Centre, Exercise Centre, Party Room",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "0-499 sqft",
+            "AreaUnformatted": "0-499 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ]
+      },
+      "Individual": [
+        {
+          "IndividualID": 2238526,
+          "Name": "ERIN PATTERSON",
+          "Organization": {
+            "OrganizationID": 282866,
+            "Name": "THE NOOK REALTY INC.",
+            "Address": {
+              "AddressText": "185 CHURCH STREET|BOWMANVILLE, Ontario L1C1T8",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "419-8833",
+                "AreaCode": "905",
+                "PhoneTypeId": "1"
+              },
+              {
+                "PhoneType": "Fax",
+                "PhoneNumber": "210-5504",
+                "AreaCode": "877",
+                "PhoneTypeId": "4"
+              }
+            ],
+            "Emails": [
+              {
+                "ContactId": "574914944"
+              }
+            ],
+            "Websites": [
+              {
+                "Website": "http://www.thenookrealty.com/",
+                "WebsiteTypeId": "1"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "HasEmail": true,
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/282866/the-nook-realty-inc-185-church-street-bowmanville-ontario-l1c1t8",
+            "PhotoLastupdate": "2025-06-12 11:31:00 AM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "419-8833",
+              "AreaCode": "905",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "576831862"
+            }
+          ],
+          "Position": "Salesperson",
+          "PermitFreetextEmail": true,
+          "FirstName": "ERIN",
+          "LastName": "PATTERSON",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/2238526/erin-patterson-185-church-street-bowmanville-ontario-l1c1t8",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "LeaseRent": "$2,150/Monthly",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "3504 - 318 RICHMOND STREET W|Toronto (Waterfront Communities), Ontario M5V0B4",
+          "Longitude": "-79.3921203",
+          "Latitude": "43.6489619",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639050285703070000/reb88/highres/6/c12729596_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639050285703070000/reb88/medres/6/c12729596_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639050285703070000/reb88/lowres/6/c12729596_1.jpg",
+            "LastUpdated": "2026-01-26 12:49:30 PM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "Underground"
+          },
+          {
+            "Name": "Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "0",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "AmmenitiesNearBy": "Public Transit",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "Underground, Garage",
+        "LeaseRentUnformattedValue": "2150",
+        "ShortValue": "2.15K",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "PostalCode": "M5V0B4",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29289726/3504-318-richmond-street-w-toronto-waterfront-communities-waterfront-communities-c1",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 5:49:30 PM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29289726/3504-318-richmond-street-w-toronto-waterfront-communities-waterfront-communities-c1",
+      "RelativeURLFr": "/immobilier/29289726/3504-318-richmond-street-w-toronto-waterfront-communities",
+      "Media": [],
+      "InsertedDateUTC": "639050465703000000",
+      "TimeOnRealtor": "6 hours ago",
+      "Tags": [
+        {
+          "Label": "6 hours ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 88
+    },
+    {
+      "Id": "29289620",
+      "MlsNumber": "C12729514",
+      "PublicRemarks": "Welcome to this stunning east-facing 2-bedroom, 2-bathroom upgraded suite at Central Condos, offering 745 sq.ft. of stylish interior living space plus a rare 167 sq.ft. private terrace perfect for enjoying your morning coffee or entertaining outdoors.Located in the heart of Torontos vibrant Entertainment District and thriving Tech Hub, this brand-new residence boasts a functional split-bedroom layout ideal for professionals, couples, or investors seeking the perfect urban lifestyle.The bright and airy living space features 9-foot ceilings and expansive floor-to-ceiling windows that fill the home with natural light. The spacious primary bedroom easily fits two nightstands, includes custom closet organizers, and offers space for a desk or additional storage. Both bathrooms are thoughtfully designed with premium Kohler and Grohe fixtures. (42019134)",
+      "Building": {
+        "BathroomTotal": "2",
+        "Bedrooms": "2",
+        "SizeInterior": "65.0316 m2",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "700+ sqft",
+            "AreaUnformatted": "700-799 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ]
+      },
+      "Individual": [
+        {
+          "IndividualID": 2153690,
+          "Name": "ERIC XUE",
+          "Organization": {
+            "OrganizationID": 284618,
+            "Name": "PROMPTON REAL ESTATE SERVICES CORP.",
+            "Address": {
+              "AddressText": "1 SINGER COURT|TORONTO, Ontario M2K1C5",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "883-3888",
+                "AreaCode": "416",
+                "PhoneTypeId": "1"
+              },
+              {
+                "PhoneType": "Fax",
+                "PhoneNumber": "883-3887",
+                "AreaCode": "416",
+                "PhoneTypeId": "4"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/284618/prompton-real-estate-services-corp-1-singer-court-toronto-ontario-m2k1c5",
+            "PhotoLastupdate": "2024-03-28 5:18:00 PM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "883-3888",
+              "AreaCode": "416",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577332185"
+            }
+          ],
+          "Position": "Salesperson",
+          "PermitFreetextEmail": true,
+          "FirstName": "ERIC",
+          "LastName": "XUE",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/2153690/eric-xue-1-singer-court-toronto-ontario-m2k1c5",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        },
+        {
+          "IndividualID": 1995979,
+          "Name": "JENNY DONG",
+          "Organization": {
+            "OrganizationID": 51254,
+            "Name": "PROMPTON REAL ESTATE SERVICES CORP.",
+            "Address": {
+              "AddressText": "357 FRONT STREET W.|TORONTO, Ontario M5V3S8",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "883-3888",
+                "AreaCode": "416",
+                "PhoneTypeId": "1"
+              },
+              {
+                "PhoneType": "Fax",
+                "PhoneNumber": "883-3887",
+                "AreaCode": "416",
+                "PhoneTypeId": "4"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/51254/prompton-real-estate-services-corp-357-front-street-w-toronto-ontario-m5v3s8",
+            "PhotoLastupdate": "2024-03-28 5:18:00 PM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "883-3888",
+              "AreaCode": "416",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577127784"
+            }
+          ],
+          "Position": "Broker",
+          "PermitFreetextEmail": true,
+          "FirstName": "JENNY",
+          "LastName": "DONG",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/1995979/jenny-dong-357-front-street-w-toronto-ontario-m5v3s8",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "Price": "$859,000",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "3702 - 38 WIDMER STREET|Toronto (Waterfront Communities), Ontario M5V0P7",
+          "Longitude": "-79.391839",
+          "Latitude": "43.6479877",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639050274952570000/reb82/highres/4/c12729514_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639050274952570000/reb82/medres/4/c12729514_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639050274952570000/reb82/lowres/4/c12729514_1.jpg",
+            "LastUpdated": "2026-01-26 12:31:35 PM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "Underground"
+          },
+          {
+            "Name": "Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "1",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "Underground, Garage",
+        "PriceUnformattedValue": "859000",
+        "ShortValue": "859K",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "PostalCode": "M5V0P7",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29289620/3702-38-widmer-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 5:31:35 PM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29289620/3702-38-widmer-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "RelativeURLFr": "/immobilier/29289620/3702-38-widmer-street-toronto-waterfront-communities",
+      "Media": [],
+      "InsertedDateUTC": "639050454952500000",
+      "TimeOnRealtor": "7 hours ago",
+      "Tags": [
+        {
+          "Label": "7 hours ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 82
+    },
+    {
+      "Id": "29289456",
+      "MlsNumber": "C12729250",
+      "PublicRemarks": "Prime Theatre & Entertainment District location near King & John, steps to TTC, dining, nightlife, and Financial District. Bright, modern studio with floor-to-ceiling windows, smart open-concept layout, and high-end integrated kitchen. Spa-inspired 4-piece bath and efficient design maximizing living, dining, and sleeping space. Impressive amenities include gym, rooftop terrace, party lounge, study/work spaces, screening room, and 24-hour concierge. Exceptional value opportunity with strong end-user and investment appeal - tenants assumable. (42018706)",
+      "Building": {
+        "BathroomTotal": "1",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "0-499 sqft",
+            "AreaUnformatted": "0-499 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ]
+      },
+      "Individual": [
+        {
+          "IndividualID": 2167087,
+          "Name": "RISHI THAPAR",
+          "Organization": {
+            "OrganizationID": 70066,
+            "Name": "HOMELIFE LANDMARK REALTY INC.",
+            "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638629621800000000/lowres/1132867.jpg",
+            "Address": {
+              "AddressText": "7240 WOODBINE AVE UNIT 103|MARKHAM, Ontario L3R1A4",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "305-1600",
+                "AreaCode": "905",
+                "PhoneTypeId": "1"
+              },
+              {
+                "PhoneType": "Fax",
+                "PhoneNumber": "305-1609",
+                "AreaCode": "905",
+                "PhoneTypeId": "4"
+              }
+            ],
+            "Emails": [
+              {
+                "ContactId": "567618385"
+              }
+            ],
+            "Websites": [
+              {
+                "Website": "http://www.homelifelandmark.com/",
+                "WebsiteTypeId": "1"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "HasEmail": true,
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/70066/homelife-landmark-realty-inc-7240-woodbine-ave-unit-103-markham-ontario-l3r1a4",
+            "PhotoLastupdate": "2024-09-26 3:43:00 PM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "305-1600",
+              "AreaCode": "905",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577474534"
+            }
+          ],
+          "Position": "Salesperson",
+          "PermitFreetextEmail": true,
+          "FirstName": "RISHI",
+          "LastName": "THAPAR",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/2167087/rishi-thapar-7240-woodbine-ave-unit-103-markham-ontario-l3r1a4",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "Price": "$369,000",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "1110 - 8 WIDMER STREET|Toronto (Waterfront Communities), Ontario M5V0W6",
+          "Longitude": "-79.3916675",
+          "Latitude": "43.646985",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639050257902070000/reb82/highres/0/c12729250_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639050257902070000/reb82/medres/0/c12729250_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639050257902070000/reb82/lowres/0/c12729250_1.jpg",
+            "LastUpdated": "2026-01-26 12:03:10 PM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "No Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "0",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "No Garage",
+        "PriceUnformattedValue": "369000",
+        "ShortValue": "369K",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "PostalCode": "M5V0W6",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29289456/1110-8-widmer-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 5:03:10 PM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29289456/1110-8-widmer-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "RelativeURLFr": "/immobilier/29289456/1110-8-widmer-street-toronto-waterfront-communities",
+      "Media": [],
+      "InsertedDateUTC": "639050437902000000",
+      "TimeOnRealtor": "7 hours ago",
+      "Tags": [
+        {
+          "Label": "7 hours ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 82
+    },
+    {
+      "Id": "29289288",
+      "MlsNumber": "C12729010",
+      "PublicRemarks": "**Bright Two-Bedroom Condo with Wrap-Around Balcony**This spacious 2-bedroom, 1-bathroom condo offers a bright, open-concept layout with a modern kitchen that flows seamlessly into the living area with blackout blinds. The kitchen features built-in fridge and freezer units, making it both stylish and functional. The primary bedroom comes with blackout blinds, a generous closet, and direct access to the wrap-around balcony. The second bedroom also offers balcony access, creating a seamless indoor-outdoor living experience. The four-piece bathroom is thoughtfully designed for convenience. Enjoy three walkouts to a wrap-around balcony, providing versatile space for relaxing or entertaining while taking in the surrounding views. Positioned with a northeast exposure, this unit is filled with natural light throughout the day. (42018298)",
+      "Building": {
+        "BathroomTotal": "1",
+        "Bedrooms": "2",
+        "SizeInterior": "55.7414 m2",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "Ammenities": "Storage - Locker",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "600+ sqft",
+            "AreaUnformatted": "600-699 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ]
+      },
+      "Individual": [
+        {
+          "IndividualID": 1759122,
+          "Name": "KARIN ROTEM",
+          "Organization": {
+            "OrganizationID": 146137,
+            "Name": "RE/MAX REALTRON REALTY INC.",
+            "Logo": "https://cdn.realtor.ca/organization/en-CA/TS639044187000000000/lowres/1177079.jpg",
+            "Address": {
+              "AddressText": "182 SHEPPARD AVENUE WEST|TORONTO, Ontario M2N1M8",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "222-2600",
+                "AreaCode": "416",
+                "PhoneTypeId": "1"
+              },
+              {
+                "PhoneType": "Fax",
+                "PhoneNumber": "222-2258",
+                "AreaCode": "416",
+                "PhoneTypeId": "4"
+              }
+            ],
+            "Emails": [
+              {
+                "ContactId": "577537970"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "HasEmail": true,
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/146137/remax-realtron-realty-inc-182-sheppard-avenue-west-toronto-ontario-m2n1m8",
+            "PhotoLastupdate": "2026-01-19 11:25:00 AM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "222-2600",
+              "AreaCode": "416",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Websites": [
+            {
+              "Website": "http://www.karinrotem.com/",
+              "WebsiteTypeId": "1"
+            },
+            {
+              "Website": "https://www.facebook.com/karin.rotem",
+              "WebsiteTypeId": "2"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "576983264"
+            }
+          ],
+          "Photo": "https://cdn.realtor.ca/individual/TS638851891200000000/lowres/1184057.jpg",
+          "Position": "Salesperson",
+          "PermitFreetextEmail": true,
+          "FirstName": "KARIN",
+          "LastName": "ROTEM",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/1759122/karin-rotem-182-sheppard-avenue-west-toronto-ontario-m2n1m8",
+          "AgentPhotoLastUpdated": "2025-06-10 21:52:00",
+          "PhotoHighRes": "https://cdn.realtor.ca/individual/TS638851891200000000/highres/1184057.jpg",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "Price": "$499,000",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "2308 - 125 PETER STREET|Toronto (Waterfront Communities), Ontario M5V0M2",
+          "Longitude": "-79.3930428",
+          "Latitude": "43.6481948",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639050239630800000/reb82/highres/0/c12729010_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639050239630800000/reb82/medres/0/c12729010_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639050239630800000/reb82/lowres/0/c12729010_1.jpg",
+            "LastUpdated": "2026-01-26 11:32:43 AM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "Underground"
+          },
+          {
+            "Name": "Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "0",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "Underground, Garage",
+        "PriceUnformattedValue": "499000",
+        "ShortValue": "499K",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "AlternateURL": {
+        "VideoLink": "https://www.houssmax.ca/showVideo/h5094946/1157814348"
+      },
+      "PostalCode": "M5V0M2",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29289288/2308-125-peter-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 4:32:43 PM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29289288/2308-125-peter-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "RelativeURLFr": "/immobilier/29289288/2308-125-peter-street-toronto-waterfront-communities",
+      "Media": [
+        {
+          "MediaCategoryId": "2",
+          "MediaCategoryURL": "https://www.houssmax.ca/showVideo/h5094946/1157814348",
+          "Description": "VideoTourWebsite",
+          "Order": 1,
+          "VideoType": "Other"
+        }
+      ],
+      "InsertedDateUTC": "639050419630730000",
+      "TimeOnRealtor": "8 hours ago",
+      "Tags": [
+        {
+          "Label": "8 hours ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 82
+    },
+    {
+      "Id": "29288896",
+      "MlsNumber": "C12728630",
+      "PublicRemarks": "Welcome to 438 King St W, Suite 1905, a high-floor suite offering an exceptionally spacious layout in the heart of King West. Floor-to-ceiling windows throughout provide abundant natural light and unobstructed city views, creating a bright and open living environment. The modern gourmet kitchen features granite countertops, stainless steel appliances, and a breakfast bar, ideal for both everyday living and entertaining. A rare oversized laundry room offers additional storage and enhanced functionality, keeping the space well organized.Enjoy seamless indoor-outdoor living with a private balcony accessible from both the living room and primary bedroom, providing a peaceful retreat above the city. Residents have access to premium building amenities including a fully equipped fitness centre, steam room, and 24-hour concierge service. Ideally located with a 10/10 Transit Score, the suite is approximately an 8 min walk to St. Andrew Subway Station, with streetcar service at the doorstep and quick access to the Gardiner Expressway and QEW.  Located steps from the Financial District, Entertainment District, and some of downtown Toronto's best dining and nightlife, the property also features all-inclusive maintenance fees covering heat, hydro, and water, providing exceptional value and truly worry-free urban living. This is an ideal home for professionals and downtown residents seeking space, convenience, and a prime King West address! (42017526)",
+      "Building": {
+        "BathroomTotal": "1",
+        "Bedrooms": "1",
+        "SizeInterior": "46.4511 m2",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "Ammenities": "Storage - Locker",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "500+ sqft",
+            "AreaUnformatted": "500-599 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ]
+      },
+      "Individual": [
+        {
+          "IndividualID": 2071450,
+          "Name": "AGNES WONG",
+          "Organization": {
+            "OrganizationID": 299820,
+            "Name": "Bay Street Kerrland Realty",
+            "Address": {
+              "AddressText": "8300 Woodbine Ave Unit: 100A1|Markham, Ontario L3R9Y7",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "917-0806",
+                "AreaCode": "905",
+                "PhoneTypeId": "1"
+              }
+            ],
+            "Emails": [
+              {
+                "ContactId": "574490384"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "HasEmail": true,
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/299820/bay-street-kerrland-realty-8300-woodbine-ave-unit-100a1-markham-ontario-l3r9y7",
+            "PhotoLastupdate": "2025-02-21 11:55:00 AM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "917-0806",
+              "AreaCode": "905",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577232879"
+            }
+          ],
+          "Photo": "https://cdn.realtor.ca/individual/TS638964021000000000/lowres/1346669.jpg",
+          "Position": "Salesperson",
+          "PermitFreetextEmail": true,
+          "FirstName": "AGNES",
+          "LastName": "WONG",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/2071450/agnes-wong-8300-woodbine-ave-unit-100a1-markham-ontario-l3r9y7",
+          "AgentPhotoLastUpdated": "2025-10-18 16:35:00",
+          "PhotoHighRes": "https://cdn.realtor.ca/individual/TS638964021000000000/highres/1346669.jpg",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        },
+        {
+          "IndividualID": 1984342,
+          "Name": "VIVIAN LUO",
+          "Organization": {
+            "OrganizationID": 299820,
+            "Name": "Bay Street Kerrland Realty",
+            "Address": {
+              "AddressText": "8300 Woodbine Ave Unit: 100A1|Markham, Ontario L3R9Y7",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "917-0806",
+                "AreaCode": "905",
+                "PhoneTypeId": "1"
+              }
+            ],
+            "Emails": [
+              {
+                "ContactId": "574490384"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "HasEmail": true,
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/299820/bay-street-kerrland-realty-8300-woodbine-ave-unit-100a1-markham-ontario-l3r9y7",
+            "PhotoLastupdate": "2025-02-21 11:55:00 AM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "917-0806",
+              "AreaCode": "905",
+              "PhoneTypeId": "1"
+            },
+            {
+              "PhoneType": "Toll Free",
+              "PhoneNumber": "303-8688",
+              "AreaCode": "416",
+              "PhoneTypeId": "5"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577110417"
+            }
+          ],
+          "Position": "Broker of Record",
+          "PermitFreetextEmail": true,
+          "FirstName": "VIVIAN",
+          "LastName": "LUO",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/1984342/vivian-luo-8300-woodbine-ave-unit-100a1-markham-ontario-l3r9y7",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "Price": "$459,000",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "1905 - 438 KING STREET W|Toronto (Waterfront Communities), Ontario M5V3T9",
+          "Longitude": "-79.3945777",
+          "Latitude": "43.6457098",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639050204362370000/reb82/highres/0/c12728630_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639050204362370000/reb82/medres/0/c12728630_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639050204362370000/reb82/lowres/0/c12728630_1.jpg",
+            "LastUpdated": "2026-01-26 10:33:56 AM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "Underground"
+          },
+          {
+            "Name": "No Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "0",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "AmmenitiesNearBy": "Public Transit",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "Underground, No Garage",
+        "PriceUnformattedValue": "459000",
+        "ShortValue": "459K",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "PostalCode": "M5V3T9",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29288896/1905-438-king-street-w-toronto-waterfront-communities-waterfront-communities-c1",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 3:33:56 PM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29288896/1905-438-king-street-w-toronto-waterfront-communities-waterfront-communities-c1",
+      "RelativeURLFr": "/immobilier/29288896/1905-438-king-street-w-toronto-waterfront-communities",
+      "Media": [],
+      "InsertedDateUTC": "639050384362300000",
+      "TimeOnRealtor": "9 hours ago",
+      "Tags": [
+        {
+          "Label": "9 hours ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 82
+    },
+    {
+      "Id": "29288598",
+      "MlsNumber": "C12728392",
+      "PublicRemarks": "Newly painted and move-in ready, this bright northwest-facing one-bedroom suite features floor-to-ceiling windows with unobstructed city views and abundant natural light. The open-concept layout offers a spacious living and dining area, an extra-large laundry room with additional storage, and an additional space beside the entrance suitable for a closet or shoe storage (not shown on the attached floor plan). Enjoy a 40 sq. ft. balcony extending the living space. The bedroom includes an oversized closet. Located in the heart of downtown, steps to transit, dining, entertainment, and the Financial District. Full amenities including 24/7 concierge, gym, pool, sauna, party room, and plenty of visitor parking spaces. One parking space included. (42016990)",
+      "Building": {
+        "BathroomTotal": "1",
+        "Bedrooms": "1",
+        "SizeInterior": "46.4511 m2",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "Ammenities": "Security/Concierge, Exercise Centre, Party Room, Visitor Parking, Separate Electricity Meters",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "500+ sqft",
+            "AreaUnformatted": "500-599 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ]
+      },
+      "Individual": [
+        {
+          "IndividualID": 1917450,
+          "Name": "MAX YAO",
+          "Organization": {
+            "OrganizationID": 286795,
+            "Name": "RE/MAX IMPERIAL REALTY INC.",
+            "Address": {
+              "AddressText": "2390 BRISTOL CIRCLE #4|OAKVILLE, Ontario L6H6M5",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "495-0808",
+                "AreaCode": "416",
+                "PhoneTypeId": "1"
+              },
+              {
+                "PhoneType": "Fax",
+                "PhoneNumber": "491-0909",
+                "AreaCode": "416",
+                "PhoneTypeId": "4"
+              }
+            ],
+            "Emails": [
+              {
+                "ContactId": "574923353"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "HasEmail": true,
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/286795/remax-imperial-realty-inc-2390-bristol-circle-4-oakville-ontario-l6h6m5",
+            "PhotoLastupdate": "2025-06-16 6:05:00 PM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "459-0953",
+              "AreaCode": "647",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577034277"
+            }
+          ],
+          "Position": "Broker",
+          "PermitFreetextEmail": true,
+          "FirstName": "MAX",
+          "LastName": "YAO",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/1917450/max-yao-2390-bristol-circle-4-oakville-ontario-l6h6m5",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        },
+        {
+          "IndividualID": 2107351,
+          "Name": "YANG LIU",
+          "Organization": {
+            "OrganizationID": 286795,
+            "Name": "RE/MAX IMPERIAL REALTY INC.",
+            "Address": {
+              "AddressText": "2390 BRISTOL CIRCLE #4|OAKVILLE, Ontario L6H6M5",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "495-0808",
+                "AreaCode": "416",
+                "PhoneTypeId": "1"
+              },
+              {
+                "PhoneType": "Fax",
+                "PhoneNumber": "491-0909",
+                "AreaCode": "416",
+                "PhoneTypeId": "4"
+              }
+            ],
+            "Emails": [
+              {
+                "ContactId": "574923353"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "HasEmail": true,
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/286795/remax-imperial-realty-inc-2390-bristol-circle-4-oakville-ontario-l6h6m5",
+            "PhotoLastupdate": "2025-06-16 6:05:00 PM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "495-0808",
+              "AreaCode": "416",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577282429"
+            }
+          ],
+          "Position": "Salesperson",
+          "PermitFreetextEmail": true,
+          "FirstName": "YANG",
+          "LastName": "LIU",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/2107351/yang-liu-2390-bristol-circle-4-oakville-ontario-l6h6m5",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "Price": "$499,000",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "1503 - 295 ADELAIDE STREET W|Toronto (Waterfront Communities), Ontario M5V0L4",
+          "Longitude": "-79.3905946",
+          "Latitude": "43.6476698",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639050110698270000/reb82/highres/2/c12728392_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639050110698270000/reb82/medres/2/c12728392_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639050110698270000/reb82/lowres/2/c12728392_1.jpg",
+            "LastUpdated": "2026-01-26 7:57:49 AM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "Underground"
+          },
+          {
+            "Name": "Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "1",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "AmmenitiesNearBy": "Place of Worship, Public Transit",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "Underground, Garage",
+        "PriceUnformattedValue": "499000",
+        "ShortValue": "499K",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "AlternateURL": {
+        "VideoLink": "https://www.tsstudio.ca/1503-295-adelaide-st-w"
+      },
+      "PostalCode": "M5V0L4",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29288598/1503-295-adelaide-street-w-toronto-waterfront-communities-waterfront-communities-c1",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 11:46:18 PM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29288598/1503-295-adelaide-street-w-toronto-waterfront-communities-waterfront-communities-c1",
+      "RelativeURLFr": "/immobilier/29288598/1503-295-adelaide-street-w-toronto-waterfront-communities",
+      "Media": [
+        {
+          "MediaCategoryId": "2",
+          "MediaCategoryURL": "https://www.tsstudio.ca/1503-295-adelaide-st-w",
+          "Description": "VideoTourWebsite",
+          "Order": 1,
+          "VideoType": "Other"
+        }
+      ],
+      "InsertedDateUTC": "639050290698200000",
+      "TimeOnRealtor": "11 hours ago",
+      "Tags": [
+        {
+          "Label": "11 hours ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 82
+    },
+    {
+      "Id": "29288457",
+      "MlsNumber": "C12728276",
+      "PublicRemarks": "Bright 3 Bed And 2 Bath Corner Unit High Level at PETER and ADELAIDE! Parking & Locker! A Residence Embodying a harmonious fusion of contemporary design, expert craftsmanship, and unparalleled convenience. Conveniently located near PATH, Financial/Entertainment Districts, subway and transit access, and an array of other attractions waiting to be explored in the vicinity. One parking And One Locker is included! Awaited amenities include Co-working & Rec Room, Outdoor Lounge, Fitness & Yoga Studio, Infra-Red Sauna & Treatment Rooms, Demo Kitchen, Private Dining Room, Party Lounge, Terrace, Outdoor Communal Dining, and Kids Zone & Arts & Crafts. (42016733)",
+      "Building": {
+        "BathroomTotal": "2",
+        "Bedrooms": "3",
+        "SizeInterior": "74.3218 m2",
+        "StoriesTotal": "",
+        "Type": "Apartment",
+        "Ammenities": "Storage - Locker",
+        "FloorAreaMeasurements": [
+          {
+            "Area": "800+ sqft",
+            "AreaUnformatted": "800-899 sqft",
+            "Type": "Square Footage",
+            "Source": "",
+            "MeasureUnitId": "1",
+            "TypeId": "1",
+            "SourceId": "0",
+            "SortBy": "1"
+          }
+        ]
+      },
+      "Individual": [
+        {
+          "IndividualID": 1939029,
+          "Name": "LISA FU",
+          "Organization": {
+            "OrganizationID": 279008,
+            "Name": "DREAM HOME REALTY INC.",
+            "Logo": "https://cdn.realtor.ca/organization/en-CA/TS638852596800000000/lowres/1299988.jpg",
+            "Address": {
+              "AddressText": "206 - 7800 WOODBINE AVENUE|MARKHAM, Ontario L3R2N7",
+              "PermitShowAddress": true
+            },
+            "Phones": [
+              {
+                "PhoneType": "Telephone",
+                "PhoneNumber": "604-6855",
+                "AreaCode": "905",
+                "PhoneTypeId": "1"
+              },
+              {
+                "PhoneType": "Fax",
+                "PhoneNumber": "604-6850",
+                "AreaCode": "905",
+                "PhoneTypeId": "4"
+              }
+            ],
+            "Emails": [
+              {
+                "ContactId": "567618760"
+              }
+            ],
+            "OrganizationType": "Firm",
+            "Designation": "Brokerage",
+            "HasEmail": true,
+            "PermitFreetextEmail": true,
+            "PermitShowListingLink": true,
+            "RelativeDetailsURL": "/office/firm/279008/dream-home-realty-inc-206-7800-woodbine-avenue-markham-ontario-l3r2n7",
+            "PhotoLastupdate": "2025-06-11 5:28:00 PM"
+          },
+          "Phones": [
+            {
+              "PhoneType": "Telephone",
+              "PhoneNumber": "604-6855",
+              "AreaCode": "905",
+              "PhoneTypeId": "1"
+            }
+          ],
+          "Emails": [
+            {
+              "ContactId": "577052483"
+            }
+          ],
+          "Photo": "https://cdn.realtor.ca/individual/TS638851894200000000/lowres/1236866.jpg",
+          "Position": "Broker",
+          "PermitFreetextEmail": true,
+          "FirstName": "LISA",
+          "LastName": "FU",
+          "CorporationDisplayTypeId": "0",
+          "PermitShowListingLink": true,
+          "RelativeDetailsURL": "/agent/1939029/lisa-fu-206-7800-woodbine-avenue-markham-ontario-l3r2n7",
+          "AgentPhotoLastUpdated": "2025-06-10 21:57:00",
+          "PhotoHighRes": "https://cdn.realtor.ca/individual/TS638851894200000000/highres/1236866.jpg",
+          "RankMyAgentKey": "",
+          "RealSatisfiedKey": "",
+          "TestimonialTreeKey": ""
+        }
+      ],
+      "Property": {
+        "LeaseRent": "$3,800/Monthly",
+        "Type": "Single Family",
+        "Address": {
+          "AddressText": "4002 - 108 PETER STREET|Toronto (Waterfront Communities), Ontario M5V2G7",
+          "Longitude": "-79.3931375",
+          "Latitude": "43.6477211",
+          "PermitShowAddress": true
+        },
+        "Photo": [
+          {
+            "SequenceId": "1",
+            "HighResPath": "https://cdn.realtor.ca/listings/TS639049753015500000/reb82/highres/6/c12728276_1.jpg",
+            "MedResPath": "https://cdn.realtor.ca/listings/TS639049753015500000/reb82/medres/6/c12728276_1.jpg",
+            "LowResPath": "https://cdn.realtor.ca/listings/TS639049753015500000/reb82/lowres/6/c12728276_1.jpg",
+            "LastUpdated": "2026-01-25 10:01:41 PM",
+            "TypeId": "0"
+          }
+        ],
+        "Parking": [
+          {
+            "Name": "Underground"
+          },
+          {
+            "Name": "Garage"
+          }
+        ],
+        "ParkingSpaceTotal": "1",
+        "TypeId": "300",
+        "OwnershipType": "Condominium/Strata",
+        "AmmenitiesNearBy": "Park, Public Transit",
+        "OwnershipTypeGroupIds": [
+          2
+        ],
+        "ParkingType": "Underground, Garage",
+        "LeaseRentUnformattedValue": "3800",
+        "ShortValue": "3.8K",
+        "PriceChangeTimeOnRealtor": "",
+        "PriceChangeTagDateUTC": "12:00:00 AM"
+      },
+      "Business": {},
+      "Land": {},
+      "PostalCode": "M5V2G7",
+      "HistoricalDataIsCleared": false,
+      "ProvinceName": "Ontario",
+      "RelativeDetailsURL": "/real-estate/29288457/4002-108-peter-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "StatusId": "1",
+      "PhotoChangeDateUTC": "2026-01-26 3:01:41 AM",
+      "HasNewImageUpdate": true,
+      "Distance": "",
+      "RelativeURLEn": "/real-estate/29288457/4002-108-peter-street-toronto-waterfront-communities-waterfront-communities-c1",
+      "RelativeURLFr": "/immobilier/29288457/4002-108-peter-street-toronto-waterfront-communities",
+      "Media": [],
+      "InsertedDateUTC": "639049933015370000",
+      "TimeOnRealtor": "21 hours ago",
+      "Tags": [
+        {
+          "Label": "21 hours ago",
+          "HTMLColorCode": "#23A1C0",
+          "ListingTagTypeID": "1"
+        }
+      ],
+      "UploadedBy": 82
+    }
+  ],
+  "Pins": [
+    {
+      "key": "",
+      "propertyId": "27962695",
+      "count": 1,
+      "longitude": "-79.39066",
+      "latitude": "43.6453"
+    },
+    {
+      "key": "",
+      "propertyId": "29281344",
+      "count": 1,
+      "longitude": "-79.39686",
+      "latitude": "43.64535"
+    },
+    {
+      "key": "",
+      "propertyId": "29100728",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29193044",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29233841",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29246433",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29268209",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29268212",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "28965466",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29126714",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29139338",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29245805",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29219800",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29256646",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29258579",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "28927425",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "28965468",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29092703",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29124898",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29267610",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "28790979",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29065546",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29131657",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29198096",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29258577",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "29222804",
+      "count": 1,
+      "longitude": "-79.39145",
+      "latitude": "43.64537"
+    },
+    {
+      "key": "",
+      "propertyId": "28931544",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "29035202",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "29035204",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "29035207",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "29035208",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "29035209",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "29035211",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "29035213",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "29033745",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "29035199",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "29035215",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "29255455",
+      "count": 1,
+      "longitude": "-79.39367",
+      "latitude": "43.64538"
+    },
+    {
+      "key": "",
+      "propertyId": "28906163",
+      "count": 1,
+      "longitude": "-79.39629",
+      "latitude": "43.64547"
+    },
+    {
+      "key": "",
+      "propertyId": "29281220",
+      "count": 1,
+      "longitude": "-79.39629",
+      "latitude": "43.64547"
+    },
+    {
+      "key": "",
+      "propertyId": "29254861",
+      "count": 1,
+      "longitude": "-79.39629",
+      "latitude": "43.64547"
+    },
+    {
+      "key": "",
+      "propertyId": "28733882",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29142974",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29192864",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29131015",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29131535",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29131838",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29156003",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29158204",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29242336",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "28969387",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29057325",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29064566",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29097957",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29109326",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29110007",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29201371",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29211054",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29269243",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29274033",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29223293",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29275536",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29112013",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29170521",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29237960",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "29216767",
+      "count": 1,
+      "longitude": "-79.39246",
+      "latitude": "43.6455"
+    },
+    {
+      "key": "",
+      "propertyId": "28621953",
+      "count": 1,
+      "longitude": "-79.39191",
+      "latitude": "43.64554"
+    },
+    {
+      "key": "",
+      "propertyId": "29102504",
+      "count": 1,
+      "longitude": "-79.39334",
+      "latitude": "43.64555"
+    },
+    {
+      "key": "",
+      "propertyId": "29269986",
+      "count": 1,
+      "longitude": "-79.39095",
+      "latitude": "43.64555"
+    },
+    {
+      "key": "",
+      "propertyId": "29210849",
+      "count": 1,
+      "longitude": "-79.39095",
+      "latitude": "43.64555"
+    },
+    {
+      "key": "",
+      "propertyId": "29287273",
+      "count": 1,
+      "longitude": "-79.39095",
+      "latitude": "43.64555"
+    },
+    {
+      "key": "",
+      "propertyId": "28836691",
+      "count": 1,
+      "longitude": "-79.39095",
+      "latitude": "43.64555"
+    },
+    {
+      "key": "",
+      "propertyId": "29176946",
+      "count": 1,
+      "longitude": "-79.39095",
+      "latitude": "43.64555"
+    },
+    {
+      "key": "",
+      "propertyId": "29276990",
+      "count": 1,
+      "longitude": "-79.39095",
+      "latitude": "43.64555"
+    },
+    {
+      "key": "",
+      "propertyId": "29276991",
+      "count": 1,
+      "longitude": "-79.39095",
+      "latitude": "43.64555"
+    },
+    {
+      "key": "",
+      "propertyId": "29206845",
+      "count": 1,
+      "longitude": "-79.39095",
+      "latitude": "43.64555"
+    },
+    {
+      "key": "",
+      "propertyId": "29286666",
+      "count": 1,
+      "longitude": "-79.39095",
+      "latitude": "43.64555"
+    },
+    {
+      "key": "",
+      "propertyId": "29160846",
+      "count": 1,
+      "longitude": "-79.39093",
+      "latitude": "43.64556"
+    },
+    {
+      "key": "",
+      "propertyId": "29193735",
+      "count": 1,
+      "longitude": "-79.3919",
+      "latitude": "43.64558"
+    },
+    {
+      "key": "",
+      "propertyId": "29247404",
+      "count": 1,
+      "longitude": "-79.3919",
+      "latitude": "43.64558"
+    },
+    {
+      "key": "",
+      "propertyId": "29249542",
+      "count": 1,
+      "longitude": "-79.3919",
+      "latitude": "43.64558"
+    },
+    {
+      "key": "",
+      "propertyId": "28101915",
+      "count": 1,
+      "longitude": "-79.3919",
+      "latitude": "43.64558"
+    },
+    {
+      "key": "",
+      "propertyId": "29149453",
+      "count": 1,
+      "longitude": "-79.3919",
+      "latitude": "43.64558"
+    },
+    {
+      "key": "",
+      "propertyId": "29211808",
+      "count": 1,
+      "longitude": "-79.3919",
+      "latitude": "43.64558"
+    },
+    {
+      "key": "",
+      "propertyId": "29262613",
+      "count": 1,
+      "longitude": "-79.3919",
+      "latitude": "43.64558"
+    },
+    {
+      "key": "",
+      "propertyId": "29270092",
+      "count": 1,
+      "longitude": "-79.3919",
+      "latitude": "43.64558"
+    },
+    {
+      "key": "",
+      "propertyId": "29177297",
+      "count": 1,
+      "longitude": "-79.3919",
+      "latitude": "43.64558"
+    },
+    {
+      "key": "",
+      "propertyId": "29218677",
+      "count": 1,
+      "longitude": "-79.3919",
+      "latitude": "43.64558"
+    },
+    {
+      "key": "",
+      "propertyId": "29153442",
+      "count": 1,
+      "longitude": "-79.3919",
+      "latitude": "43.64558"
+    },
+    {
+      "key": "",
+      "propertyId": "27867707",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29277913",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29218809",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29233639",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29064588",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29169695",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29182180",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29227702",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29246887",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29253470",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29033521",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29208914",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29236867",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29238674",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29278813",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29173331",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64561"
+    },
+    {
+      "key": "",
+      "propertyId": "29219809",
+      "count": 1,
+      "longitude": "-79.39316",
+      "latitude": "43.64563"
+    },
+    {
+      "key": "",
+      "propertyId": "29259261",
+      "count": 1,
+      "longitude": "-79.39316",
+      "latitude": "43.64563"
+    },
+    {
+      "key": "",
+      "propertyId": "29287387",
+      "count": 1,
+      "longitude": "-79.39316",
+      "latitude": "43.64563"
+    },
+    {
+      "key": "",
+      "propertyId": "29172936",
+      "count": 1,
+      "longitude": "-79.39316",
+      "latitude": "43.64563"
+    },
+    {
+      "key": "",
+      "propertyId": "29290003",
+      "count": 1,
+      "longitude": "-79.39316",
+      "latitude": "43.64563"
+    },
+    {
+      "key": "",
+      "propertyId": "29170422",
+      "count": 1,
+      "longitude": "-79.39316",
+      "latitude": "43.64563"
+    },
+    {
+      "key": "",
+      "propertyId": "29219330",
+      "count": 1,
+      "longitude": "-79.39316",
+      "latitude": "43.64563"
+    },
+    {
+      "key": "",
+      "propertyId": "29275761",
+      "count": 1,
+      "longitude": "-79.3916",
+      "latitude": "43.64564"
+    },
+    {
+      "key": "",
+      "propertyId": "29223938",
+      "count": 1,
+      "longitude": "-79.39199",
+      "latitude": "43.64569"
+    },
+    {
+      "key": "",
+      "propertyId": "29272381",
+      "count": 1,
+      "longitude": "-79.3969",
+      "latitude": "43.6457"
+    },
+    {
+      "key": "",
+      "propertyId": "29288896",
+      "count": 1,
+      "longitude": "-79.39458",
+      "latitude": "43.64571"
+    },
+    {
+      "key": "",
+      "propertyId": "28378427",
+      "count": 1,
+      "longitude": "-79.39458",
+      "latitude": "43.64571"
+    },
+    {
+      "key": "",
+      "propertyId": "29228387",
+      "count": 1,
+      "longitude": "-79.39458",
+      "latitude": "43.64571"
+    },
+    {
+      "key": "",
+      "propertyId": "29100914",
+      "count": 1,
+      "longitude": "-79.39458",
+      "latitude": "43.64571"
+    },
+    {
+      "key": "",
+      "propertyId": "29118937",
+      "count": 1,
+      "longitude": "-79.39458",
+      "latitude": "43.64571"
+    },
+    {
+      "key": "",
+      "propertyId": "29258025",
+      "count": 1,
+      "longitude": "-79.39458",
+      "latitude": "43.64571"
+    },
+    {
+      "key": "",
+      "propertyId": "29082933",
+      "count": 1,
+      "longitude": "-79.39458",
+      "latitude": "43.64571"
+    },
+    {
+      "key": "",
+      "propertyId": "29125569",
+      "count": 1,
+      "longitude": "-79.39029",
+      "latitude": "43.64571"
+    },
+    {
+      "key": "",
+      "propertyId": "29179997",
+      "count": 1,
+      "longitude": "-79.38954",
+      "latitude": "43.64571"
+    },
+    {
+      "key": "",
+      "propertyId": "29275225",
+      "count": 1,
+      "longitude": "-79.39761",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29259259",
+      "count": 1,
+      "longitude": "-79.39761",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29024513",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29260098",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29078702",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29129029",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29178044",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29069536",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29171469",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29235254",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29267430",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29002551",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29063621",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29283490",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29285968",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29286686",
+      "count": 1,
+      "longitude": "-79.39018",
+      "latitude": "43.64572"
+    },
+    {
+      "key": "",
+      "propertyId": "29203145",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29239403",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29243249",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29246441",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29248337",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29256938",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29260289",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29264780",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29269165",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29269534",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29270628",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29028481",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29076982",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29134991",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29226070",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29028482",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "29028483",
+      "count": 1,
+      "longitude": "-79.39251",
+      "latitude": "43.64577"
+    },
+    {
+      "key": "",
+      "propertyId": "28398770",
+      "count": 1,
+      "longitude": "-79.39166",
+      "latitude": "43.64581"
+    },
+    {
+      "key": "",
+      "propertyId": "29188966",
+      "count": 1,
+      "longitude": "-79.39183",
+      "latitude": "43.64582"
+    },
+    {
+      "key": "",
+      "propertyId": "29147513",
+      "count": 1,
+      "longitude": "-79.39209",
+      "latitude": "43.64585"
+    },
+    {
+      "key": "",
+      "propertyId": "28933100",
+      "count": 1,
+      "longitude": "-79.39653",
+      "latitude": "43.64594"
+    },
+    {
+      "key": "",
+      "propertyId": "29211875",
+      "count": 1,
+      "longitude": "-79.38976",
+      "latitude": "43.64595"
+    },
+    {
+      "key": "",
+      "propertyId": "29248512",
+      "count": 1,
+      "longitude": "-79.38976",
+      "latitude": "43.64595"
+    },
+    {
+      "key": "",
+      "propertyId": "29256941",
+      "count": 1,
+      "longitude": "-79.38976",
+      "latitude": "43.64595"
+    },
+    {
+      "key": "",
+      "propertyId": "29285048",
+      "count": 1,
+      "longitude": "-79.38976",
+      "latitude": "43.64595"
+    },
+    {
+      "key": "",
+      "propertyId": "29132343",
+      "count": 1,
+      "longitude": "-79.38976",
+      "latitude": "43.64595"
+    },
+    {
+      "key": "",
+      "propertyId": "29213047",
+      "count": 1,
+      "longitude": "-79.38976",
+      "latitude": "43.64595"
+    },
+    {
+      "key": "",
+      "propertyId": "29221851",
+      "count": 1,
+      "longitude": "-79.38976",
+      "latitude": "43.64595"
+    },
+    {
+      "key": "",
+      "propertyId": "28570364",
+      "count": 1,
+      "longitude": "-79.3938",
+      "latitude": "43.646"
+    },
+    {
+      "key": "",
+      "propertyId": "29244778",
+      "count": 1,
+      "longitude": "-79.39396",
+      "latitude": "43.64605"
+    },
+    {
+      "key": "",
+      "propertyId": "29290396",
+      "count": 1,
+      "longitude": "-79.39396",
+      "latitude": "43.64605"
+    },
+    {
+      "key": "",
+      "propertyId": "29271939",
+      "count": 1,
+      "longitude": "-79.39396",
+      "latitude": "43.64605"
+    },
+    {
+      "key": "",
+      "propertyId": "28957376",
+      "count": 1,
+      "longitude": "-79.39396",
+      "latitude": "43.64605"
+    },
+    {
+      "key": "",
+      "propertyId": "29192714",
+      "count": 1,
+      "longitude": "-79.39396",
+      "latitude": "43.64605"
+    },
+    {
+      "key": "",
+      "propertyId": "29151559",
+      "count": 1,
+      "longitude": "-79.39104",
+      "latitude": "43.64607"
+    },
+    {
+      "key": "",
+      "propertyId": "29079877",
+      "count": 1,
+      "longitude": "-79.39723",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29241899",
+      "count": 1,
+      "longitude": "-79.39723",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29201470",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29236351",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29238504",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29244324",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "28263173",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29081481",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29168693",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29174953",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29181206",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29192537",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29205822",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29232205",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29252990",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29249553",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.64619"
+    },
+    {
+      "key": "",
+      "propertyId": "29235259",
+      "count": 1,
+      "longitude": "-79.39447",
+      "latitude": "43.64625"
+    },
+    {
+      "key": "",
+      "propertyId": "29240676",
+      "count": 1,
+      "longitude": "-79.39694",
+      "latitude": "43.64637"
+    },
+    {
+      "key": "",
+      "propertyId": "29264961",
+      "count": 1,
+      "longitude": "-79.3935",
+      "latitude": "43.64639"
+    },
+    {
+      "key": "",
+      "propertyId": "29276905",
+      "count": 1,
+      "longitude": "-79.3935",
+      "latitude": "43.64639"
+    },
+    {
+      "key": "",
+      "propertyId": "29285349",
+      "count": 1,
+      "longitude": "-79.3935",
+      "latitude": "43.64639"
+    },
+    {
+      "key": "",
+      "propertyId": "29261332",
+      "count": 1,
+      "longitude": "-79.3935",
+      "latitude": "43.64639"
+    },
+    {
+      "key": "",
+      "propertyId": "29249273",
+      "count": 1,
+      "longitude": "-79.3977",
+      "latitude": "43.64644"
+    },
+    {
+      "key": "",
+      "propertyId": "29173977",
+      "count": 1,
+      "longitude": "-79.39359",
+      "latitude": "43.64653"
+    },
+    {
+      "key": "",
+      "propertyId": "29264296",
+      "count": 1,
+      "longitude": "-79.39359",
+      "latitude": "43.64653"
+    },
+    {
+      "key": "",
+      "propertyId": "29264318",
+      "count": 1,
+      "longitude": "-79.39359",
+      "latitude": "43.64653"
+    },
+    {
+      "key": "",
+      "propertyId": "29155820",
+      "count": 1,
+      "longitude": "-79.39359",
+      "latitude": "43.64653"
+    },
+    {
+      "key": "",
+      "propertyId": "29108926",
+      "count": 1,
+      "longitude": "-79.39359",
+      "latitude": "43.64653"
+    },
+    {
+      "key": "",
+      "propertyId": "29147425",
+      "count": 1,
+      "longitude": "-79.39359",
+      "latitude": "43.64653"
+    },
+    {
+      "key": "",
+      "propertyId": "29239941",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "29059889",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "29217525",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "29217534",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "29267429",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "28925205",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "28982228",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "29070034",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "28958932",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "29084654",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "29220983",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "29197506",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "29265279",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "29194363",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "28708030",
+      "count": 1,
+      "longitude": "-79.39075",
+      "latitude": "43.64667"
+    },
+    {
+      "key": "",
+      "propertyId": "29157771",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29166795",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29239939",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29245222",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29248672",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29286765",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29210321",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29210752",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29262281",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29268211",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29270625",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29278584",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29291152",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29285519",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29172942",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29269239",
+      "count": 1,
+      "longitude": "-79.39244",
+      "latitude": "43.64687"
+    },
+    {
+      "key": "",
+      "propertyId": "29274205",
+      "count": 1,
+      "longitude": "-79.39721",
+      "latitude": "43.64688"
+    },
+    {
+      "key": "",
+      "propertyId": "29214091",
+      "count": 1,
+      "longitude": "-79.39721",
+      "latitude": "43.64688"
+    },
+    {
+      "key": "",
+      "propertyId": "29236188",
+      "count": 1,
+      "longitude": "-79.39721",
+      "latitude": "43.64688"
+    },
+    {
+      "key": "",
+      "propertyId": "29265477",
+      "count": 1,
+      "longitude": "-79.39242",
+      "latitude": "43.6469"
+    },
+    {
+      "key": "",
+      "propertyId": "29226066",
+      "count": 1,
+      "longitude": "-79.39149",
+      "latitude": "43.64692"
+    },
+    {
+      "key": "",
+      "propertyId": "29129566",
+      "count": 1,
+      "longitude": "-79.39149",
+      "latitude": "43.64692"
+    },
+    {
+      "key": "",
+      "propertyId": "29242815",
+      "count": 1,
+      "longitude": "-79.39149",
+      "latitude": "43.64692"
+    },
+    {
+      "key": "",
+      "propertyId": "28990197",
+      "count": 1,
+      "longitude": "-79.39149",
+      "latitude": "43.64692"
+    },
+    {
+      "key": "",
+      "propertyId": "29123862",
+      "count": 1,
+      "longitude": "-79.39149",
+      "latitude": "43.64692"
+    },
+    {
+      "key": "",
+      "propertyId": "29208230",
+      "count": 1,
+      "longitude": "-79.39149",
+      "latitude": "43.64692"
+    },
+    {
+      "key": "",
+      "propertyId": "29213698",
+      "count": 1,
+      "longitude": "-79.39149",
+      "latitude": "43.64692"
+    },
+    {
+      "key": "",
+      "propertyId": "29179689",
+      "count": 1,
+      "longitude": "-79.39149",
+      "latitude": "43.64692"
+    },
+    {
+      "key": "",
+      "propertyId": "29043816",
+      "count": 1,
+      "longitude": "-79.39223",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29246882",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29246885",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29064562",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29216290",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29270085",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29284437",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29289456",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29172188",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29164805",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29165903",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29236887",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29238471",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29240655",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29241525",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29241607",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29242687",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29283307",
+      "count": 1,
+      "longitude": "-79.39167",
+      "latitude": "43.64698"
+    },
+    {
+      "key": "",
+      "propertyId": "29241363",
+      "count": 1,
+      "longitude": "-79.39169",
+      "latitude": "43.64699"
+    },
+    {
+      "key": "",
+      "propertyId": "29163895",
+      "count": 1,
+      "longitude": "-79.39722",
+      "latitude": "43.64722"
+    },
+    {
+      "key": "",
+      "propertyId": "29247250",
+      "count": 1,
+      "longitude": "-79.39722",
+      "latitude": "43.64722"
+    },
+    {
+      "key": "",
+      "propertyId": "29235740",
+      "count": 1,
+      "longitude": "-79.39118",
+      "latitude": "43.64722"
+    },
+    {
+      "key": "",
+      "propertyId": "29278252",
+      "count": 1,
+      "longitude": "-79.39118",
+      "latitude": "43.64722"
+    },
+    {
+      "key": "",
+      "propertyId": "29281217",
+      "count": 1,
+      "longitude": "-79.39118",
+      "latitude": "43.64722"
+    },
+    {
+      "key": "",
+      "propertyId": "29055289",
+      "count": 1,
+      "longitude": "-79.39118",
+      "latitude": "43.64722"
+    },
+    {
+      "key": "",
+      "propertyId": "29245233",
+      "count": 1,
+      "longitude": "-79.39118",
+      "latitude": "43.64722"
+    },
+    {
+      "key": "",
+      "propertyId": "29263659",
+      "count": 1,
+      "longitude": "-79.39118",
+      "latitude": "43.64722"
+    },
+    {
+      "key": "",
+      "propertyId": "29285030",
+      "count": 1,
+      "longitude": "-79.39118",
+      "latitude": "43.64722"
+    },
+    {
+      "key": "",
+      "propertyId": "29223936",
+      "count": 1,
+      "longitude": "-79.3896",
+      "latitude": "43.64741"
+    },
+    {
+      "key": "",
+      "propertyId": "29202513",
+      "count": 1,
+      "longitude": "-79.39053",
+      "latitude": "43.64749"
+    },
+    {
+      "key": "",
+      "propertyId": "28968319",
+      "count": 1,
+      "longitude": "-79.39053",
+      "latitude": "43.64749"
+    },
+    {
+      "key": "",
+      "propertyId": "29254024",
+      "count": 1,
+      "longitude": "-79.3927",
+      "latitude": "43.64752"
+    },
+    {
+      "key": "",
+      "propertyId": "29058900",
+      "count": 1,
+      "longitude": "-79.3927",
+      "latitude": "43.64752"
+    },
+    {
+      "key": "",
+      "propertyId": "29217535",
+      "count": 1,
+      "longitude": "-79.38995",
+      "latitude": "43.64753"
+    },
+    {
+      "key": "",
+      "propertyId": "29246074",
+      "count": 1,
+      "longitude": "-79.38995",
+      "latitude": "43.64753"
+    },
+    {
+      "key": "",
+      "propertyId": "29260703",
+      "count": 1,
+      "longitude": "-79.38995",
+      "latitude": "43.64753"
+    },
+    {
+      "key": "",
+      "propertyId": "29237491",
+      "count": 1,
+      "longitude": "-79.38995",
+      "latitude": "43.64753"
+    },
+    {
+      "key": "",
+      "propertyId": "29261203",
+      "count": 1,
+      "longitude": "-79.38995",
+      "latitude": "43.64753"
+    },
+    {
+      "key": "",
+      "propertyId": "29261907",
+      "count": 1,
+      "longitude": "-79.38995",
+      "latitude": "43.64753"
+    },
+    {
+      "key": "",
+      "propertyId": "29286202",
+      "count": 1,
+      "longitude": "-79.38995",
+      "latitude": "43.64753"
+    },
+    {
+      "key": "",
+      "propertyId": "29214279",
+      "count": 1,
+      "longitude": "-79.39037",
+      "latitude": "43.64758"
+    },
+    {
+      "key": "",
+      "propertyId": "29253203",
+      "count": 1,
+      "longitude": "-79.39257",
+      "latitude": "43.64761"
+    },
+    {
+      "key": "",
+      "propertyId": "29264800",
+      "count": 1,
+      "longitude": "-79.39257",
+      "latitude": "43.64761"
+    },
+    {
+      "key": "",
+      "propertyId": "28764631",
+      "count": 1,
+      "longitude": "-79.39059",
+      "latitude": "43.64767"
+    },
+    {
+      "key": "",
+      "propertyId": "29270902",
+      "count": 1,
+      "longitude": "-79.39059",
+      "latitude": "43.64767"
+    },
+    {
+      "key": "",
+      "propertyId": "29288598",
+      "count": 1,
+      "longitude": "-79.39059",
+      "latitude": "43.64767"
+    },
+    {
+      "key": "",
+      "propertyId": "29274202",
+      "count": 1,
+      "longitude": "-79.39059",
+      "latitude": "43.64767"
+    },
+    {
+      "key": "",
+      "propertyId": "29033084",
+      "count": 1,
+      "longitude": "-79.39059",
+      "latitude": "43.64767"
+    },
+    {
+      "key": "",
+      "propertyId": "29235049",
+      "count": 1,
+      "longitude": "-79.39059",
+      "latitude": "43.64767"
+    },
+    {
+      "key": "",
+      "propertyId": "29231705",
+      "count": 1,
+      "longitude": "-79.39059",
+      "latitude": "43.64767"
+    },
+    {
+      "key": "",
+      "propertyId": "29282584",
+      "count": 1,
+      "longitude": "-79.39059",
+      "latitude": "43.64767"
+    },
+    {
+      "key": "",
+      "propertyId": "29248335",
+      "count": 1,
+      "longitude": "-79.39336",
+      "latitude": "43.64768"
+    },
+    {
+      "key": "",
+      "propertyId": "29248596",
+      "count": 1,
+      "longitude": "-79.39336",
+      "latitude": "43.64768"
+    },
+    {
+      "key": "",
+      "propertyId": "29050492",
+      "count": 1,
+      "longitude": "-79.39336",
+      "latitude": "43.64768"
+    },
+    {
+      "key": "",
+      "propertyId": "28993904",
+      "count": 1,
+      "longitude": "-79.39683",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29203062",
+      "count": 1,
+      "longitude": "-79.39683",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29245218",
+      "count": 1,
+      "longitude": "-79.39683",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "27976993",
+      "count": 1,
+      "longitude": "-79.39683",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "26874078",
+      "count": 1,
+      "longitude": "-79.39683",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29223297",
+      "count": 1,
+      "longitude": "-79.39683",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29255280",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29283501",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29235051",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29056769",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29169284",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29229542",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29030747",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29194460",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29195598",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29223350",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29203798",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29241617",
+      "count": 1,
+      "longitude": "-79.39331",
+      "latitude": "43.64769"
+    },
+    {
+      "key": "",
+      "propertyId": "29165157",
+      "count": 1,
+      "longitude": "-79.39332",
+      "latitude": "43.6477"
+    },
+    {
+      "key": "",
+      "propertyId": "29179696",
+      "count": 1,
+      "longitude": "-79.39314",
+      "latitude": "43.64772"
+    },
+    {
+      "key": "",
+      "propertyId": "29207664",
+      "count": 1,
+      "longitude": "-79.39314",
+      "latitude": "43.64772"
+    },
+    {
+      "key": "",
+      "propertyId": "29206566",
+      "count": 1,
+      "longitude": "-79.39314",
+      "latitude": "43.64772"
+    },
+    {
+      "key": "",
+      "propertyId": "29288457",
+      "count": 1,
+      "longitude": "-79.39314",
+      "latitude": "43.64772"
+    },
+    {
+      "key": "",
+      "propertyId": "29254492",
+      "count": 1,
+      "longitude": "-79.38961",
+      "latitude": "43.64772"
+    },
+    {
+      "key": "",
+      "propertyId": "29057867",
+      "count": 1,
+      "longitude": "-79.38994",
+      "latitude": "43.64777"
+    },
+    {
+      "key": "",
+      "propertyId": "29108224",
+      "count": 1,
+      "longitude": "-79.39111",
+      "latitude": "43.64783"
+    },
+    {
+      "key": "",
+      "propertyId": "29205486",
+      "count": 1,
+      "longitude": "-79.39111",
+      "latitude": "43.64783"
+    },
+    {
+      "key": "",
+      "propertyId": "29245793",
+      "count": 1,
+      "longitude": "-79.39111",
+      "latitude": "43.64783"
+    },
+    {
+      "key": "",
+      "propertyId": "29278685",
+      "count": 1,
+      "longitude": "-79.39111",
+      "latitude": "43.64783"
+    },
+    {
+      "key": "",
+      "propertyId": "29267014",
+      "count": 1,
+      "longitude": "-79.39111",
+      "latitude": "43.64783"
+    },
+    {
+      "key": "",
+      "propertyId": "29120522",
+      "count": 1,
+      "longitude": "-79.39111",
+      "latitude": "43.64783"
+    },
+    {
+      "key": "",
+      "propertyId": "29207384",
+      "count": 1,
+      "longitude": "-79.39111",
+      "latitude": "43.64783"
+    },
+    {
+      "key": "",
+      "propertyId": "29217519",
+      "count": 1,
+      "longitude": "-79.39117",
+      "latitude": "43.64785"
+    },
+    {
+      "key": "",
+      "propertyId": "29092557",
+      "count": 1,
+      "longitude": "-79.39742",
+      "latitude": "43.6479"
+    },
+    {
+      "key": "",
+      "propertyId": "29188919",
+      "count": 1,
+      "longitude": "-79.39742",
+      "latitude": "43.6479"
+    },
+    {
+      "key": "",
+      "propertyId": "29190494",
+      "count": 1,
+      "longitude": "-79.39742",
+      "latitude": "43.6479"
+    },
+    {
+      "key": "",
+      "propertyId": "29272288",
+      "count": 1,
+      "longitude": "-79.39742",
+      "latitude": "43.6479"
+    },
+    {
+      "key": "",
+      "propertyId": "29272291",
+      "count": 1,
+      "longitude": "-79.39742",
+      "latitude": "43.6479"
+    },
+    {
+      "key": "",
+      "propertyId": "29272373",
+      "count": 1,
+      "longitude": "-79.39742",
+      "latitude": "43.6479"
+    },
+    {
+      "key": "",
+      "propertyId": "29141204",
+      "count": 1,
+      "longitude": "-79.39753",
+      "latitude": "43.64795"
+    },
+    {
+      "key": "",
+      "propertyId": "29100905",
+      "count": 1,
+      "longitude": "-79.39327",
+      "latitude": "43.64797"
+    },
+    {
+      "key": "",
+      "propertyId": "29100906",
+      "count": 1,
+      "longitude": "-79.39327",
+      "latitude": "43.64797"
+    },
+    {
+      "key": "",
+      "propertyId": "29031025",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29236194",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29263301",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29276422",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "28948433",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29075581",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29107620",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29139328",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29196925",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29201684",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29205701",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29213274",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29213301",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29249257",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29263828",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29274662",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29289620",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29256942",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29226264",
+      "count": 1,
+      "longitude": "-79.39184",
+      "latitude": "43.64799"
+    },
+    {
+      "key": "",
+      "propertyId": "29176454",
+      "count": 1,
+      "longitude": "-79.39191",
+      "latitude": "43.64804"
+    },
+    {
+      "key": "",
+      "propertyId": "28091698",
+      "count": 1,
+      "longitude": "-79.39677",
+      "latitude": "43.64807"
+    },
+    {
+      "key": "",
+      "propertyId": "29265265",
+      "count": 1,
+      "longitude": "-79.39677",
+      "latitude": "43.64807"
+    },
+    {
+      "key": "",
+      "propertyId": "29268003",
+      "count": 1,
+      "longitude": "-79.39677",
+      "latitude": "43.64807"
+    },
+    {
+      "key": "",
+      "propertyId": "29155701",
+      "count": 1,
+      "longitude": "-79.39304",
+      "latitude": "43.64819"
+    },
+    {
+      "key": "",
+      "propertyId": "29266132",
+      "count": 1,
+      "longitude": "-79.39304",
+      "latitude": "43.64819"
+    },
+    {
+      "key": "",
+      "propertyId": "29148040",
+      "count": 1,
+      "longitude": "-79.39304",
+      "latitude": "43.64819"
+    },
+    {
+      "key": "",
+      "propertyId": "29162265",
+      "count": 1,
+      "longitude": "-79.39304",
+      "latitude": "43.64819"
+    },
+    {
+      "key": "",
+      "propertyId": "29215550",
+      "count": 1,
+      "longitude": "-79.39304",
+      "latitude": "43.64819"
+    },
+    {
+      "key": "",
+      "propertyId": "29245408",
+      "count": 1,
+      "longitude": "-79.39304",
+      "latitude": "43.64819"
+    },
+    {
+      "key": "",
+      "propertyId": "29221479",
+      "count": 1,
+      "longitude": "-79.39304",
+      "latitude": "43.64819"
+    },
+    {
+      "key": "",
+      "propertyId": "29289288",
+      "count": 1,
+      "longitude": "-79.39304",
+      "latitude": "43.64819"
+    },
+    {
+      "key": "",
+      "propertyId": "29084282",
+      "count": 1,
+      "longitude": "-79.39304",
+      "latitude": "43.64819"
+    },
+    {
+      "key": "",
+      "propertyId": "29236812",
+      "count": 1,
+      "longitude": "-79.39304",
+      "latitude": "43.64819"
+    },
+    {
+      "key": "",
+      "propertyId": "29195034",
+      "count": 1,
+      "longitude": "-79.39503",
+      "latitude": "43.6482"
+    },
+    {
+      "key": "",
+      "propertyId": "29258419",
+      "count": 1,
+      "longitude": "-79.39503",
+      "latitude": "43.6482"
+    },
+    {
+      "key": "",
+      "propertyId": "29087693",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29059425",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29205214",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29267271",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29267432",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "28908376",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29210753",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29231577",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29279645",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29053029",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29216765",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29284597",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29106943",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64886"
+    },
+    {
+      "key": "",
+      "propertyId": "29197286",
+      "count": 1,
+      "longitude": "-79.39259",
+      "latitude": "43.64887"
+    },
+    {
+      "key": "",
+      "propertyId": "29146529",
+      "count": 1,
+      "longitude": "-79.38803",
+      "latitude": "43.6489"
+    },
+    {
+      "key": "",
+      "propertyId": "29205145",
+      "count": 1,
+      "longitude": "-79.38803",
+      "latitude": "43.6489"
+    },
+    {
+      "key": "",
+      "propertyId": "29244774",
+      "count": 1,
+      "longitude": "-79.38803",
+      "latitude": "43.6489"
+    },
+    {
+      "key": "",
+      "propertyId": "29250193",
+      "count": 1,
+      "longitude": "-79.38803",
+      "latitude": "43.6489"
+    },
+    {
+      "key": "",
+      "propertyId": "29246066",
+      "count": 1,
+      "longitude": "-79.39201",
+      "latitude": "43.64894"
+    },
+    {
+      "key": "",
+      "propertyId": "29202704",
+      "count": 1,
+      "longitude": "-79.39201",
+      "latitude": "43.64894"
+    },
+    {
+      "key": "",
+      "propertyId": "28752456",
+      "count": 1,
+      "longitude": "-79.39201",
+      "latitude": "43.64894"
+    },
+    {
+      "key": "",
+      "propertyId": "29265479",
+      "count": 1,
+      "longitude": "-79.39201",
+      "latitude": "43.64894"
+    },
+    {
+      "key": "",
+      "propertyId": "29289726",
+      "count": 1,
+      "longitude": "-79.39212",
+      "latitude": "43.64896"
+    },
+    {
+      "key": "",
+      "propertyId": "29273211",
+      "count": 1,
+      "longitude": "-79.39213",
+      "latitude": "43.64898"
+    },
+    {
+      "key": "",
+      "propertyId": "29098018",
+      "count": 1,
+      "longitude": "-79.39213",
+      "latitude": "43.64898"
+    },
+    {
+      "key": "",
+      "propertyId": "29158424",
+      "count": 1,
+      "longitude": "-79.39213",
+      "latitude": "43.64898"
+    },
+    {
+      "key": "",
+      "propertyId": "29212313",
+      "count": 1,
+      "longitude": "-79.39213",
+      "latitude": "43.64898"
+    },
+    {
+      "key": "",
+      "propertyId": "29276904",
+      "count": 1,
+      "longitude": "-79.39213",
+      "latitude": "43.64898"
+    },
+    {
+      "key": "",
+      "propertyId": "29163583",
+      "count": 1,
+      "longitude": "-79.39213",
+      "latitude": "43.64898"
+    },
+    {
+      "key": "",
+      "propertyId": "28700386",
+      "count": 1,
+      "longitude": "-79.39213",
+      "latitude": "43.64898"
+    },
+    {
+      "key": "",
+      "propertyId": "28861311",
+      "count": 1,
+      "longitude": "-79.38841",
+      "latitude": "43.64904"
+    },
+    {
+      "key": "",
+      "propertyId": "29228128",
+      "count": 1,
+      "longitude": "-79.38841",
+      "latitude": "43.64904"
+    },
+    {
+      "key": "",
+      "propertyId": "29264322",
+      "count": 1,
+      "longitude": "-79.38841",
+      "latitude": "43.64904"
+    },
+    {
+      "key": "",
+      "propertyId": "28960130",
+      "count": 1,
+      "longitude": "-79.38841",
+      "latitude": "43.64904"
+    },
+    {
+      "key": "",
+      "propertyId": "29049162",
+      "count": 1,
+      "longitude": "-79.38841",
+      "latitude": "43.64904"
+    },
+    {
+      "key": "",
+      "propertyId": "29068701",
+      "count": 1,
+      "longitude": "-79.38841",
+      "latitude": "43.64904"
+    },
+    {
+      "key": "",
+      "propertyId": "29224666",
+      "count": 1,
+      "longitude": "-79.38841",
+      "latitude": "43.64904"
+    },
+    {
+      "key": "",
+      "propertyId": "29247534",
+      "count": 1,
+      "longitude": "-79.38841",
+      "latitude": "43.64904"
+    },
+    {
+      "key": "",
+      "propertyId": "29257183",
+      "count": 1,
+      "longitude": "-79.38841",
+      "latitude": "43.64904"
+    },
+    {
+      "key": "",
+      "propertyId": "29215815",
+      "count": 1,
+      "longitude": "-79.38841",
+      "latitude": "43.64904"
+    },
+    {
+      "key": "",
+      "propertyId": "29175146",
+      "count": 1,
+      "longitude": "-79.38841",
+      "latitude": "43.64904"
+    },
+    {
+      "key": "",
+      "propertyId": "29162730",
+      "count": 1,
+      "longitude": "-79.39555",
+      "latitude": "43.64915"
+    },
+    {
+      "key": "",
+      "propertyId": "29234822",
+      "count": 1,
+      "longitude": "-79.38848",
+      "latitude": "43.64942"
+    },
+    {
+      "key": "",
+      "propertyId": "29287418",
+      "count": 1,
+      "longitude": "-79.38848",
+      "latitude": "43.64942"
+    },
+    {
+      "key": "",
+      "propertyId": "29219590",
+      "count": 1,
+      "longitude": "-79.38848",
+      "latitude": "43.64942"
+    },
+    {
+      "key": "",
+      "propertyId": "29291771",
+      "count": 1,
+      "longitude": "-79.38848",
+      "latitude": "43.64942"
+    },
+    {
+      "key": "",
+      "propertyId": "29225386",
+      "count": 1,
+      "longitude": "-79.38848",
+      "latitude": "43.64942"
+    },
+    {
+      "key": "",
+      "propertyId": "29241610",
+      "count": 1,
+      "longitude": "-79.38848",
+      "latitude": "43.64942"
+    },
+    {
+      "key": "",
+      "propertyId": "29216280",
+      "count": 1,
+      "longitude": "-79.38848",
+      "latitude": "43.64942"
+    },
+    {
+      "key": "",
+      "propertyId": "29291568",
+      "count": 1,
+      "longitude": "-79.39725",
+      "latitude": "43.64976"
+    },
+    {
+      "key": "",
+      "propertyId": "29126701",
+      "count": 1,
+      "longitude": "-79.39713",
+      "latitude": "43.64986"
+    },
+    {
+      "key": "",
+      "propertyId": "29201834",
+      "count": 1,
+      "longitude": "-79.39339",
+      "latitude": "43.65019"
+    },
+    {
+      "key": "",
+      "propertyId": "29241900",
+      "count": 1,
+      "longitude": "-79.3922",
+      "latitude": "43.65042"
+    },
+    {
+      "key": "",
+      "propertyId": "29212368",
+      "count": 1,
+      "longitude": "-79.3922",
+      "latitude": "43.65042"
+    },
+    {
+      "key": "",
+      "propertyId": "28872860",
+      "count": 1,
+      "longitude": "-79.3922",
+      "latitude": "43.65042"
+    },
+    {
+      "key": "",
+      "propertyId": "29221871",
+      "count": 1,
+      "longitude": "-79.39106",
+      "latitude": "43.65058"
+    },
+    {
+      "key": "",
+      "propertyId": "29153918",
+      "count": 1,
+      "longitude": "-79.39054",
+      "latitude": "43.65182"
+    },
+    {
+      "key": "",
+      "propertyId": "29239951",
+      "count": 1,
+      "longitude": "-79.39054",
+      "latitude": "43.65182"
+    },
+    {
+      "key": "",
+      "propertyId": "29242483",
+      "count": 1,
+      "longitude": "-79.39054",
+      "latitude": "43.65182"
+    },
+    {
+      "key": "",
+      "propertyId": "29241423",
+      "count": 1,
+      "longitude": "-79.39054",
+      "latitude": "43.65182"
+    },
+    {
+      "key": "",
+      "propertyId": "29245579",
+      "count": 1,
+      "longitude": "-79.38944",
+      "latitude": "43.65197"
+    },
+    {
+      "key": "",
+      "propertyId": "29236186",
+      "count": 1,
+      "longitude": "-79.39511",
+      "latitude": "43.65219"
+    },
+    {
+      "key": "",
+      "propertyId": "29275232",
+      "count": 1,
+      "longitude": "-79.39408",
+      "latitude": "43.65231"
+    },
+    {
+      "key": "",
+      "propertyId": "29267617",
+      "count": 1,
+      "longitude": "-79.38878",
+      "latitude": "43.65241"
+    },
+    {
+      "key": "",
+      "propertyId": "29264632",
+      "count": 1,
+      "longitude": "-79.38878",
+      "latitude": "43.65241"
+    },
+    {
+      "key": "",
+      "propertyId": "28753630",
+      "count": 1,
+      "longitude": "-79.38878",
+      "latitude": "43.65241"
+    },
+    {
+      "key": "",
+      "propertyId": "29168151",
+      "count": 1,
+      "longitude": "-79.38878",
+      "latitude": "43.65241"
+    },
+    {
+      "key": "",
+      "propertyId": "29265272",
+      "count": 1,
+      "longitude": "-79.38878",
+      "latitude": "43.65241"
+    },
+    {
+      "key": "",
+      "propertyId": "29119747",
+      "count": 1,
+      "longitude": "-79.38878",
+      "latitude": "43.65241"
+    },
+    {
+      "key": "",
+      "propertyId": "29177190",
+      "count": 1,
+      "longitude": "-79.38878",
+      "latitude": "43.65241"
+    },
+    {
+      "key": "",
+      "propertyId": "29213667",
+      "count": 1,
+      "longitude": "-79.38878",
+      "latitude": "43.65241"
+    },
+    {
+      "key": "",
+      "propertyId": "29233436",
+      "count": 1,
+      "longitude": "-79.38878",
+      "latitude": "43.65241"
+    },
+    {
+      "key": "",
+      "propertyId": "28974665",
+      "count": 1,
+      "longitude": "-79.3898",
+      "latitude": "43.65251"
+    },
+    {
+      "key": "",
+      "propertyId": "29160211",
+      "count": 1,
+      "longitude": "-79.3905",
+      "latitude": "43.65273"
+    },
+    {
+      "key": "",
+      "propertyId": "29161813",
+      "count": 1,
+      "longitude": "-79.39059",
+      "latitude": "43.65281"
+    },
+    {
+      "key": "",
+      "propertyId": "29127043",
+      "count": 1,
+      "longitude": "-79.38989",
+      "latitude": "43.6529"
+    },
+    {
+      "key": "",
+      "propertyId": "29094609",
+      "count": 1,
+      "longitude": "-79.39079",
+      "latitude": "43.65313"
+    },
+    {
+      "key": "",
+      "propertyId": "29239527",
+      "count": 1,
+      "longitude": "-79.39004",
+      "latitude": "43.65316"
+    }
+  ],
+  "GroupingLevel": ""
+}

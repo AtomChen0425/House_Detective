@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>House Detective - ArcGIS Native Charts</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+    <style>
+        html, body, #viewDiv { padding: 0; margin: 0; height: 100%; width: 100%; }
+        #header { height: 60px; background: #004575; color: white; display: flex; align-items: center; padding: 0 20px; gap: 15px; position: relative; z-index: 10; }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <strong>House Detective Canada</strong>
+        <input type="text" id="cookieInput" style="width: 350px;" placeholder="粘贴最新 Cookie">
+        <button onclick="saveCookie()">保存配置</button>
+    </div>
+    <div id="viewDiv"></div>
+
+    <script src="https://js.arcgis.com/4.28/"></script>
+
+    <script>
+        require([
+            "esri/Map",
+            "esri/views/MapView",
+            "esri/Graphic",
+            "esri/layers/GraphicsLayer"
+        ], function(Map, MapView, Graphic, GraphicsLayer) {
+
+            const houseMap = new Map({ basemap: "streets-vector" });
+            const view = new MapView({
+                container: "viewDiv",
+                map: houseMap,
+                center: [-79.393, 43.646],
+                zoom: 13
+            });
+
+            const gLayer = new GraphicsLayer();
+            houseMap.add(gLayer);
+
+            async function loadHouses() {
+                const res = await fetch('/api/listings');
+                const houses = await res.json();
+
+                houses.forEach(house => {
+                    const coords = house.location.coordinates;
+
+                    // 将 price_history 转换为 ArcGIS 图表需要的格式
+                    // ArcGIS 图表通常需要平铺的属性字段
+                    const attributes = {
+                        address: house.address,
+                        mls: house.mlsNumber,
+                        currentPrice: house.price
+                    };
+
+                    // 将历史价格平铺到 attributes 中，例如 p1, p2, p3...
+                    const chartFields = [];
+                    house.price_history.forEach((h, index) => {
+                        const fieldName = `p${index}`;
+                        const dateLabel = new Date(h.captured_at.$date || h.captured_at).toLocaleDateString();
+                        attributes[fieldName] = h.price_value;
+                        attributes[`date${index}`] = dateLabel;
+                        chartFields.push(fieldName);
+                    });
+
+                    const graphic = new Graphic({
+                        geometry: { type: "point", longitude: coords[0], latitude: coords[1] },
+                        symbol: {
+                            type: "simple-marker",
+                            color: "#2b8cbe",
+                            outline: { color: "white", width: 1 }
+                        },
+                        attributes: attributes,
+                        popupTemplate: {
+                            title: "{address}",
+                            content: [
+                                {
+                                    type: "fields",
+                                    fieldInfos: [
+                                        { fieldName: "mls", label: "MLS Number" },
+                                        { fieldName: "currentPrice", label: "Current Price" },
+                                        { fieldName: "date0", label: "Latest Date" } 
+                                    ]
+                                },
+                                {
+                                    type: "media",
+                                    mediaInfos: [{
+                                        title: "Price History Chart",
+                                        type: "line-chart",
+                                        caption: "Historical Price Data",
+                                        value: {
+                                            fields: chartFields, // 使用刚才生成的动态字段名
+                                        }
+                                    }]
+                                }
+                            ]
+                        }
+                    });
+                    gLayer.add(graphic);
+                });
+            }
+
+            view.when(loadHouses);
+        });
+
+        async function saveCookie() {
+            const val = document.getElementById('cookieInput').value;
+            await fetch('/api/config/cookie', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({cookie: val})
+            });
+            alert("Cookie 已存入数据库");
+        }
+    </script>
+</body>
+</html>
