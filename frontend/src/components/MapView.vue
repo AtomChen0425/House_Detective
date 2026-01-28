@@ -15,13 +15,13 @@ const API_URL = '/api';
 
 onMounted(() => {
   const map = new Map({
-    basemap: "gray-vector" // 使用灰色底图，让房源点更突出
+    basemap: "streets-navigation-vector" 
   });
 
   const view = new MapView({
     container: "viewDiv",
     map: map,
-    center: [-79.393, 43.646], // 多伦多市中心
+    center: [-79.393, 43.646], 
     zoom: 14
   });
 
