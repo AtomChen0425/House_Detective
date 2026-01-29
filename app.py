@@ -37,6 +37,7 @@ def get_listings():
         "address": 1, "location": 1, "price_history": 1,
         "bedrooms": 1, "bathrooms": 1, "property_type": 1,
         "raw_data.Property.Photo": 1,"raw_data.RelativeDetailsURL":1,
+        "unit_price_per_sqm": 1,
         "_id": 0
     })
     listings = list(cursor)
