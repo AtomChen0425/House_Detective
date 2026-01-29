@@ -141,6 +141,21 @@ const handleLayerToggle = (isAnalysisMode) => {
           statisticType: "count"
         }
       ],
+      labelingInfo: [{
+        deconflictionStrategy: "none", 
+        labelPlacement: "center-center",
+        symbol: {
+          type: "text",
+          color: "white",
+          font: { weight: "bold", family: "sans-serif", size: "11px" },
+          haloColor: [0, 0, 0, 0.6], 
+          haloSize: 1.5
+        },
+        labelExpressionInfo: {
+          
+          expression: "Text($feature.avg_price_per_sqm, '#,##0')" 
+        }
+      }],
       popupTemplate: {
         title: "Region Summary",
         content: `
@@ -177,7 +192,7 @@ const getPointRenderer = () => ({
   symbol: {
     type: "simple-marker",
     color: [226, 119, 40],
-    size: 6,
+    size: 12,
     outline: { color: "white", width: 0.5 }
   }
 });
