@@ -1,5 +1,6 @@
 from Crawler.Realtor_Spider import RealtorSpider
 from Service.Manage_DataBase import Manage_DataBase 
+from BackEnd.DataProcess import DataProcessor
 import time
 import os
 import random
@@ -36,3 +37,5 @@ def collect_data_for_region(region):
             break
 if __name__ == "__main__":
     run_daily_update()
+    processor = DataProcessor(db_uri=mongo_uri)
+    processor.calculate_unit_price()

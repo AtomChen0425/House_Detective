@@ -1,7 +1,7 @@
 import re
 import math
 from pymongo import MongoClient, UpdateOne
-from tqdm import tqdm
+# from tqdm import tqdm
 
 class DataProcessor:
     def __init__(self, db_uri="mongodb://localhost:27017/", db_name="House_Analysis_Canada", collection_name="listings"):
@@ -70,7 +70,7 @@ class DataProcessor:
         
         bulk_ops = []
         
-        for doc in tqdm(cursor, total=total_docs):
+        for doc in cursor:
             try:
                 # 1. 获取价格 (优先取清洗好的，如果没有则取 raw)
                 raw_price = doc.get('price') or doc.get('total_price')
