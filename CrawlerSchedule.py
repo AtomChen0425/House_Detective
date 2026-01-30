@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 from Crawler.Realtor_Spider import RealtorSpider
 from Service.Manage_DataBase import Manage_DataBase 
 from BackEnd.DataProcess import DataProcessor

@@ -37,6 +37,14 @@ onMounted(() => {
   });
 
   loadListings();
+//   view.on("click", async (event) => {
+//   const hit = await view.hitTest(event);
+//   const g = hit.results[0]?.graphic;
+//   if (!g) return;
+
+//   console.log("avg_price_per_sqm:", g.attributes.avg_price_per_sqm);
+//   console.log("attributes:", g.attributes);
+// });
 });
 
 const loadListings = async () => {
@@ -165,10 +173,11 @@ const handleLayerToggle = (isAnalysisMode) => {
           </div>
         `,
         fieldInfos: [{ fieldName: "avg_price_per_sqm", format: { places: 0, digitSeparator: true } }]
-      }
+      },
+      renderer: getClusterRenderer(15000)
     };
 
-    housingLayer.renderer = getClusterRenderer(15000);
+    // housingLayer.renderer = getClusterRenderer(15000);
     housingLayer.labelingInfo = getClusterLabels();
 
   } else {
@@ -251,7 +260,7 @@ const getClusterRenderer = (maxVal) => ({
   visualVariables: [
     {
       type: "color",
-      field: "unitPrice",
+      field: "avg_price_per_sqm",
       stops: [
         { value: 0, color: "rgba(200, 200, 200, 0.5)" },
         { value: maxVal*0.3, color: "rgba(68, 85, 136, 0.8)" },  
