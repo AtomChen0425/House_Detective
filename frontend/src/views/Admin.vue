@@ -75,6 +75,13 @@
                 </el-table-column>
               </el-table>
             </el-card>
+
+            <el-card header="Map Picker (Draw Rectangle to Get Coords)">
+              <div id="adminMapDiv" style="height: 500px; width: 100%;"></div>
+              <div style="margin-top: 10px; color: #666; font-size: 13px;">
+                Using the rectangle tool from the top-right, draw a rectangle on the map to auto-fill the coordinate fields when adding a new region.
+              </div>
+            </el-card>
           </el-tab-pane>
         </el-tabs>
       </el-main>
@@ -109,7 +116,7 @@
              </el-form-item>
           </el-col>
         </el-row>
-        <!-- <el-alert title="提示：可在 Realtor.ca 抓包 Request Payload 中找到对应坐标" type="warning" :closable="false" /> -->
+        
       </el-form>
       <template #footer>
         <span class="dialog-footer">
@@ -125,7 +132,12 @@
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
-
+import Map from '@arcgis/core/Map';
+import MapView from '@arcgis/core/views/MapView';
+import GraphicsLayer from '@arcgis/core/layers/GraphicsLayer';
+import Sketch from '@arcgis/core/widgets/Sketch';
+import * as webMercatorUtils from "@arcgis/core/geometry/support/webMercatorUtils";
+import Graphic from '@arcgis/core/Graphic';
 const API_URL = '/api';
 
 // Cookie 状态
@@ -176,6 +188,7 @@ const fetchRegions = async () => {
   try {
     const res = await axios.get(`${API_URL}/config/regions`)
     regions.value = res.data
+    displayStoredRegions()
   } catch (e) {
     console.error(e)
   }
@@ -198,10 +211,107 @@ const deleteRegion = async (id) => {
     await axios.delete(`${API_URL}/config/regions`, { params: { id } })
     ElMessage.success('Region deleted successfully')
     fetchRegions()
+    await fetchRegions() 
+    displayStoredRegions() 
   } catch (e) {
     ElMessage.error('Delete failed')
   }
 }
+
+let adminView = null;
+const sketchLayer = new GraphicsLayer();
+const storedRegionsLayer = new GraphicsLayer(); 
+onMounted(() => {
+  fetchCookieConfig()
+  fetchRegions()
+  initAdminMap() 
+})
+
+const initAdminMap = () => {
+  const map = new Map({
+    basemap: "streets-navigation-vector",
+    layers: [storedRegionsLayer,sketchLayer]
+  });
+
+  adminView = new MapView({
+    container: "adminMapDiv",
+    map: map,
+    center: [-79.393, 43.646],
+    zoom: 11
+  });
+
+  const sketch = new Sketch({
+    view: adminView,
+    layer: sketchLayer,
+    visibleElements: {
+      createTools: { point: false, polyline: false, polygon: false, circle: false }, 
+      selectionTools: { "las-selection": false, "rectangle-selection": false }
+    },
+    creationMode: "update",
+    updateOnGraphicClick: true
+  });
+  
+  adminView.ui.add(sketch, "top-right");
+  const updateFormCoordinates = (geometry) => {
+    const geoGeometry = webMercatorUtils.webMercatorToGeographic(geometry);
+    const extent = geoGeometry.extent;
+    newRegion.value.lat_min = extent.ymin.toFixed(6);
+    newRegion.value.lat_max = extent.ymax.toFixed(6);
+    newRegion.value.lng_min = extent.xmin.toFixed(6);
+    newRegion.value.lng_max = extent.xmax.toFixed(6);
+  };
+  sketch.on("create", (event) => {
+    if (event.state === "complete") {
+      updateFormCoordinates(event.graphic.geometry);
+      dialogVisible.value = true;
+    }
+  });
+  sketch.on("update", (event) => {
+    if (event.state === "active" || event.state === "complete") {
+      const currentGraphic = event.graphics[0];
+      if (currentGraphic) {
+        updateFormCoordinates(currentGraphic.geometry);
+      }
+    }
+  });
+};
+const displayStoredRegions = () => {
+  storedRegionsLayer.removeAll(); 
+
+  regions.value.forEach(region => {
+    if (!region.coords) return;
+
+    const { lat_min, lat_max, lng_min, lng_max } = region.coords;
+    
+    const polygon = {
+      type: "polygon",
+      rings: [
+        [ [lng_min, lat_min], [lng_min, lat_max], [lng_max, lat_max], [lng_max, lat_min], [lng_min, lat_min] ]
+      ]
+    };
+
+    const fillSymbol = {
+      type: "simple-fill",
+      color: [0, 69, 117, 0.2], 
+      outline: {
+        color: [0, 69, 117, 0.8],
+        width: 1
+      }
+    };
+
+    const graphic = new Graphic({
+      geometry: polygon,
+      symbol: fillSymbol,
+      attributes: { name: region.name },
+      popupTemplate: {
+        title: "{name}",
+        content: "Existing collection region"
+      }
+    });
+
+    storedRegionsLayer.add(graphic);
+  });
+};
 </script>
 
 <style scoped>
@@ -216,5 +326,9 @@ const deleteRegion = async (id) => {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#adminMapDiv {
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 </style>
