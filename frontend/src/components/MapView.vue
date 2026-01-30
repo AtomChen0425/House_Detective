@@ -191,7 +191,13 @@ const handleLayerToggle = (isAnalysisMode) => {
 
 const handleIntensityUpdate = (maxVal) => {
   if (housingLayer && housingLayer.featureReduction) {
-    housingLayer.renderer = getClusterRenderer(maxVal);
+    // housingLayer.featureReduction.renderer = getClusterRenderer(maxVal);
+    console.log("Updating Max Value to:", maxVal);
+
+    const newReduction = housingLayer.featureReduction.clone();
+    const newRenderer = getClusterRenderer(maxVal); 
+    newReduction.renderer = newRenderer;
+    housingLayer.featureReduction = newReduction;
   }
 };
 
