@@ -7,7 +7,7 @@
 ## Interface Display
 
 ![Main Map Interface](./screenshots/Listing.png)
-![Popup](./screenshots/Popup2.png)
+![Popup](./screenshots/PopUp2.png)
 ![Analysis Mode](./screenshots/Analysis.png)
 ![Admin Panel](./screenshots/Admin.png)
 ---
