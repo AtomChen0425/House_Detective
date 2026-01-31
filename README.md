@@ -1,6 +1,15 @@
 # 🕵️‍♀️ House Detective (WIP)
 
+
 **House Detective** is a web-based geographic information tool designed to crawl, analyze, and visualize housing market data from Realtor.ca. It allows users to monitor property listings, track price history, and analyze regional price trends through an interactive map interface.
+
+---
+## Interface Display
+
+![Main Map Interface](./screenshots/Listing.png)
+![Popup](./screenshots/Popup2.png)
+![Analysis Mode](./screenshots/Analysis.png)
+![Admin Panel](./screenshots/Admin.png)
 ---
 
 ## ✨ Key Features
@@ -42,5 +51,6 @@
 - [x] Automated crawler scheduling (Backend).
 - [ ] Advanced filtering (Price, Bed/Bath, Property Type).
 - [ ] User authentication for the Admin panel.
+- [ ] Auto notify user the change of average price.
 
 ---
