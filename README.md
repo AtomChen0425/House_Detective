@@ -38,7 +38,7 @@
 * **Frontend**: [Vue.js 3](https://vuejs.org/) 
 * **UI Framework**: [Element Plus](https://element-plus.org/)
 * **Mapping Engine**: [ArcGIS Maps SDK for JavaScript](https://developers.arcgis.com/javascript/latest/)
-* **Data Base**: [MongDB]([https://axios-http.com/](https://www.mongodb.com/))
+* **Data Base**: [MongDB](https://www.mongodb.com/)
 
 ---
 
