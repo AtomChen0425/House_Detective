@@ -1,7 +1,10 @@
+# -*- coding: UTF-8 -*-
 from Crawler.Realtor_Spider import RealtorSpider
 from Service.Manage_DataBase import Manage_DataBase 
+from BackEnd.DataProcess import DataProcessor
 import time
 import os
+import random
 mongo_uri = os.getenv(
     "MONGO_URI",
     "mongodb://mongo:27017/" 
@@ -13,10 +16,10 @@ def run_daily_update():
     for region in regions:
         print(f"开始抓取区域: {region['name']}")
         collect_data_for_region(region)
-        
+        time.sleep(300+random.randint(0, 300))
 def collect_data_for_region(region):
     spider = RealtorSpider(db_uri=mongo_uri)
-    db_manager = Manage_DataBase(db_uri=mongo_uri) # 移到循环外，复用连接
+    db_manager = Manage_DataBase(db_uri=mongo_uri)
     continue_fetching = True
     page = 1
     
@@ -27,10 +30,13 @@ def collect_data_for_region(region):
             db_manager.process_and_save_listings(data)
             print(f"✅ 区域 {region['name']} 第 {page} 页更新完成")
             page += 1
-            time.sleep(10) # 仅在成功抓取后延迟，避免被 Realtor.ca 封禁
+            time.sleep(10) 
+            if page % 10 == 0:
+                time.sleep(60+random.randint(0, 600))
         else:
-            # 如果某页失败，打印具体信息并退出当前区域
             print(f"🛑 区域 {region['name']} 第 {page} 页抓取中断或无结果")
             break
 if __name__ == "__main__":
     run_daily_update()
+    processor = DataProcessor(db_uri=mongo_uri)
+    processor.calculate_unit_price()

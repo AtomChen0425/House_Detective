@@ -1,0 +1,21 @@
+/* src/style.css */
+
+/* 1. 强制去除浏览器默认边距 */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* 禁止出现滚动条 */
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+}
+
+/* 2. 确保 Vue 的根节点 #app 也是全屏 */
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* 某些 Element Plus 主题可能会给 app 加 padding，这里强制去掉 */
+  box-sizing: border-box; 
+}
