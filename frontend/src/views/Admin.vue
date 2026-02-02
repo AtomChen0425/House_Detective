@@ -8,41 +8,57 @@
       
       <el-main>
         <el-tabs type="border-card">
-          
-          <el-tab-pane label="🍪 Crawler Config (Cookie)">
+          <el-tab-pane label="🍪 Cookie Pool Management">
             <el-card class="box-card">
               <template #header>
                 <div class="card-header">
-                  <span>Realtor.ca Cookie Status</span>
-                  <el-tag :type="cookieStatus === 'active' ? 'success' : 'danger'">
-                    {{ cookieStatus === 'active' ? 'Active' : 'Inactive/Unknown' }}
-                  </el-tag>
+                  <span>Realtor.ca Cookie Pool (Active: {{ activeCount }})</span>
+                  <el-button type="success" size="small" @click="openCookieDialog()">
+                    + Add New Cookie
+                  </el-button>
                 </div>
               </template>
-              
-              <!-- <el-alert 
-                title="Cookie info" 
-                type="info" 
-                description="Realtor API 需要有效的 Cookie 才能抓取。请从浏览器 (F12 -> Network) 复制最新的 Cookie 粘贴于此。"
-                show-icon :closable="false" style="margin-bottom: 20px;"
-              /> -->
 
-              <el-form label-width="120px">
-                <el-form-item label="Current Cookie">
-                  <el-input 
-                    v-model="cookieForm.cookie" 
-                    type="textarea" 
-                    :rows="4" 
-                    placeholder="Paste long Cookie string here..." 
-                  />
-                </el-form-item>
-                <el-form-item>
-                  <el-button type="primary" @click="saveCookie" :loading="loading">Update Configuration</el-button>
-                </el-form-item>
-              </el-form>
-              <div v-if="lastUpdated" style="margin-top:10px; color:#999; font-size:12px;">
-                Last updated: {{ new Date(lastUpdated).toLocaleString() }}
-              </div>
+              <el-table :data="cookieList" stripe style="width: 100%" v-loading="loading">
+                <el-table-column label="Status" width="120">
+                  <template #default="scope">
+                    <el-tag :type="scope.row.status === 'active' ? 'success' : 'danger'">
+                      {{ scope.row.status.toUpperCase() }}
+                    </el-tag>
+                  </template>
+                </el-table-column>
+
+                <el-table-column label="Cookie Preview" min-width="300">
+                  <template #default="scope">
+                    <code class="cookie-code">{{ scope.row.cookie.substring(0, 60) }}...</code>
+                  </template>
+                </el-table-column>
+
+                <el-table-column label="Last Updated" width="180">
+                  <template #default="scope">
+                    <span class="time-text">{{ formatTime(scope.row.last_updated) }}</span>
+                  </template>
+                </el-table-column>
+
+                <el-table-column label="Control" width="180">
+                  <template #default="scope">
+                    <el-button type="primary" size="small" link @click="openCookieDialog(scope.row)">Edit</el-button>
+                    <el-popconfirm 
+                      title="Are you sure to delete this cookie?"
+                      @confirm="deleteCookie(scope.row._id.$oid)"
+                    >
+                      <template #reference>
+                        <el-button 
+                          type="danger" 
+                          size="small" 
+                          link 
+                          :disabled="cookieList.length <= 1"
+                        >Delete</el-button>
+                      </template>
+                    </el-popconfirm>
+                  </template>
+                </el-table-column>
+              </el-table>
             </el-card>
           </el-tab-pane>
 
@@ -125,11 +141,32 @@
         </span>
       </template>
     </el-dialog>
+
+    <el-dialog 
+      v-model="cookieDialogVisible" 
+      :title="isEdit ? 'Edit Existing Cookie' : 'Add New Cookie to Pool'" 
+      width="600px"
+    >
+      <el-form label-position="top">
+        <el-form-item label="Cookie String">
+          <el-input 
+            v-model="cookieForm.cookie" 
+            type="textarea" 
+            :rows="8" 
+            placeholder="Paste raw cookie string from browser..." 
+          />
+        </el-form-item>
+      </el-form>
+      <template #footer>
+        <el-button @click="cookieDialogVisible = false">Cancel</el-button>
+        <el-button type="primary" @click="saveCookie" :loading="submitLoading">Save Configuration</el-button>
+      </template>
+    </el-dialog>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted,computed } from 'vue'
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
 import Map from '@arcgis/core/Map';
@@ -140,11 +177,6 @@ import * as webMercatorUtils from "@arcgis/core/geometry/support/webMercatorUtil
 import Graphic from '@arcgis/core/Graphic';
 const API_URL = '/api';
 
-// Cookie 状态
-const cookieForm = ref({ cookie: '' })
-const cookieStatus = ref('unknown')
-const lastUpdated = ref(null)
-const loading = ref(false)
 
 // 区域管理
 const regions = ref([])
@@ -156,31 +188,74 @@ onMounted(() => {
   fetchRegions()
 })
 
-// --- Cookie Logic ---
-const fetchCookieConfig = async () => {
-  try {
-    const res = await axios.get(`${API_URL}/config/cookie`)
-    if (res.data) {
-      cookieForm.value.cookie = res.data.cookie
-      cookieStatus.value = res.data.status
-      lastUpdated.value = res.data.last_updated?.$date || res.data.last_updated
-    }
-  } catch (e) {
-    console.error(e)
-  }
-}
+// --- Cookie Pool Logic ---
+const cookieList = ref([])
+const loading = ref(false)
+const submitLoading = ref(false)
+const cookieDialogVisible = ref(false)
+const isEdit = ref(false)
+const cookieForm = ref({ id: null, cookie: '' })
 
-const saveCookie = async () => {
+const activeCount = computed(() => {
+  return cookieList.value.filter(c => c.status === 'active').length
+})
+
+const fetchCookieConfig = async () => {
   loading.value = true
   try {
-    await axios.post(`${API_URL}/config/cookie`, { cookie: cookieForm.value.cookie })
-    ElMessage.success('Cookie Updated Successfully')
-    fetchCookieConfig()
+    const res = await axios.get(`${API_URL}/config/cookie`)
+    cookieList.value = Array.isArray(res.data) ? res.data : [res.data]
   } catch (e) {
-    ElMessage.error('Update Failed')
+    ElMessage.error('Failed to load cookie pool')
   } finally {
     loading.value = false
   }
+}
+
+const openCookieDialog = (row = null) => {
+  if (row) {
+    isEdit.value = true
+    cookieForm.value = { id: row._id.$oid, cookie: row.cookie }
+  } else {
+    isEdit.value = false
+    cookieForm.value = { id: null, cookie: '' }
+  }
+  cookieDialogVisible.value = true
+}
+
+const saveCookie = async () => {
+  if (!cookieForm.value.cookie) return ElMessage.warning('Cookie is required')
+  submitLoading.value = true
+  try {
+    await axios.post(`${API_URL}/config/cookie`, cookieForm.value)
+    ElMessage.success(isEdit.value ? 'Cookie updated' : 'New cookie added')
+    cookieDialogVisible.value = false
+    fetchCookieConfig()
+  } catch (e) {
+    ElMessage.error('Operation failed')
+  } finally {
+    submitLoading.value = false
+  }
+}
+
+const deleteCookie = async (id) => {
+  try {
+    const res = await axios.delete(`${API_URL}/config/cookie`, { params: { id } })
+    if (res.data.status === 'success') {
+      ElMessage.success('Cookie removed from pool')
+      fetchCookieConfig()
+    } else {
+      ElMessage.error(res.data.message)
+    }
+  } catch (e) {
+    ElMessage.error('Delete action failed')
+  }
+}
+
+const formatTime = (timeData) => {
+  if (!timeData) return 'N/A'
+  const date = timeData.$date ? new Date(timeData.$date) : new Date(timeData)
+  return date.toLocaleString()
 }
 
 // --- Region Logic ---

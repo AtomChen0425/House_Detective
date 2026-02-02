@@ -44,32 +44,42 @@ def get_listings():
     return json.loads(json_util.dumps(listings))
 
 # --- Cookie 管理 ---
-
-@app.route('/api/config/cookie', methods=['GET', 'POST'])
+@app.route('/api/config/cookie', methods=['GET', 'POST', 'DELETE'])
 def manage_cookie():
-    """获取或更新 Cookie"""
     if request.method == 'POST':
         data = request.json
-        new_cookie = data.get("cookie")
-        if not new_cookie:
-            return jsonify({"status": "error", "message": "Cookie 不能为空"}), 400
+        cookie_id = data.get("id")  # 如果前端传了 ID，就是修改
+        cookie_str = data.get("cookie")
         
-        db.config.update_one(
-            {"type": "realtor_config"},
-            {"$set": {
-                "cookie": new_cookie, 
-                "status": "active",
-                "last_updated": datetime.datetime.now()
-            }},
-            upsert=True
-        )
-        return jsonify({"status": "success", "message": "Cookie 已更新"})
-    
-    else:
-        config = db.config.find_one({"type": "realtor_config"}, {"_id": 0})
-        return jsonify(config if config else {"status": "unknown"})
+        update_data = {
+            "cookie": cookie_str,
+            "status": "active",
+            "last_updated": datetime.datetime.now()
+        }
 
-# --- 采集区域管理 (新增) ---
+        if cookie_id:
+            # 修改
+            db.config.update_one({"_id": ObjectId(cookie_id)}, {"$set": update_data})
+            return jsonify({"status": "success", "message": "Cookie 已更新"})
+        else:
+            # 新增
+            update_data["type"] = "realtor_config"
+            db.config.insert_one(update_data)
+            return jsonify({"status": "success", "message": "新 Cookie 已入池"})
+
+    elif request.method == 'DELETE':
+        cookie_id = request.args.get('id')
+        count = db.config.count_documents({"type": "realtor_config"})
+        if count <= 1:
+            return jsonify({"status": "error", "message": "禁止删除：池中必须保留至少一个 Cookie"}), 403
+        
+        db.config.delete_one({"_id": ObjectId(cookie_id)})
+        return jsonify({"status": "success", "message": "已成功删除"})
+
+    else:
+        configs = list(db.config.find({"type": "realtor_config"}))
+        return json.loads(json_util.dumps(configs))
+# --- 采集区域管理  ---
 
 @app.route('/api/config/regions', methods=['GET', 'POST', 'DELETE'])
 def manage_regions():
@@ -80,7 +90,6 @@ def manage_regions():
     
     if request.method == 'POST':
         data = request.json
-        # 简单验证
         if not all(k in data for k in ('name', 'lat_min', 'lat_max', 'lng_min', 'lng_max')):
             return jsonify({"error": "缺少必要坐标参数"}), 400
         
