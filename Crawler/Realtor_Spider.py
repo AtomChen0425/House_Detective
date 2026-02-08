@@ -17,7 +17,7 @@ class RealtorSpider:
 
         # --- 初始化 Session ---
         self.session = requests.Session()
-        
+        self.current_cookie_id = None  # 记录当前正在使用的数据库文档 ID
         # 设置基础 Headers (注意：这里不再硬编码 User-Agent)
         self.session.headers.update({
             "accept": "*/*",
@@ -43,27 +43,58 @@ class RealtorSpider:
         """从数据库读取前端更新的最新 Cookie"""
         config = self.db.config.find_one({"type": "realtor_config"})
         return config.get("cookie") if config else ""
+    def _parse_cookie_to_dict(self, cookie_str):
+        """将字符串格式的 Cookie 转换为字典"""
+        cookie_dict = {}
+        for item in cookie_str.split(';'):
+            if '=' in item:
+                k, v = item.strip().split('=', 1)
+                cookie_dict[k] = v
+        return cookie_dict
 
+    def _switch_to_next_valid_cookie(self):
+        """
+        从数据库查找一个状态为 'active' 的 Cookie。
+        如果当前 Cookie 已失效，则切换到下一个。
+        """
+
+        if len(self.session.cookies) > 0:
+            return True  # 当前 Cookie 仍然有效，无需切换
+        
+        # 查找一个状态正常的 Cookie
+        new_config = self.db.config.find_one({"type": "realtor_config", "status": "active"})
+        
+        if not new_config:
+            print("❌ 严重错误: 数据库中没有可用的有效 Cookie！")
+            return False
+
+        # 如果切换了新 Cookie，则更新 Session
+        if self.current_cookie_id != new_config["_id"]:
+            print(f"🔄 正在切换到新的 Cookie (ID: {new_config['_id']})...")
+            self.session.cookies.clear()  # 清空旧 Session 状态
+            cookie_dict = self._parse_cookie_to_dict(new_config["cookie"])
+            self.session.cookies.update(cookie_dict)
+            self.current_cookie_id = new_config["_id"]
+        
+        return True
     def fetch_data(self, region_coords, page=1):
         """根据传入的坐标抓取数据"""
         
-        cookie = self.get_latest_cookie()
-        if not cookie:
+        # cookie = self.get_latest_cookie()
+        # if not cookie:
+        #     print("❌ 错误: 数据库中未找到有效 Cookie")
+        #     return None, False
+        if not self._switch_to_next_valid_cookie():
             print("❌ 错误: 数据库中未找到有效 Cookie")
             return None, False
 
-        # --- 关键修改：每次请求前随机更换 User-Agent ---
-        # 这样服务器会认为是不同的设备在访问
         random_ua = self.ua.random
         
-        # 更新 Session 的 Headers (Cookie 和 User-Agent 同时更新)
+        # 更新 Session 的 Headers (User-Agent 更新)
         self.session.headers.update({
-            "cookie": cookie,
             "user-agent": random_ua
         })
 
-        # 打印当前使用的 UA (调试用，稳定后可注释掉)
-        # print(f"Current UA: {random_ua[:50]}...") 
 
         payload = {
             "ZoomLevel": "18",
@@ -85,7 +116,6 @@ class RealtorSpider:
         }
 
         try:
-            # 随机延时 (防封必备)
             time.sleep(random.uniform(1, 3)) 
 
             response = self.session.post(self.url, data=payload, timeout=10)
@@ -102,8 +132,10 @@ class RealtorSpider:
 
             elif response.status_code == 403:
                 print("⚠️ 403 Forbidden: Cookie 失效或 IP 被封")
-                self.db.config.update_one({"type": "realtor_config"}, {"$set": {"status": "expired"}})
-                return None, False
+                self.db.config.update_one({"_id": self.current_cookie_id}, {"$set": {"status": "expired"}})
+                self.session.cookies.clear()
+                return self.fetch_data(region_coords, page)
+                # return None, False
             
             else:
                 print(f"⚠️ 请求失败: {response.status_code}")

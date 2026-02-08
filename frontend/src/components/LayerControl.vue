@@ -1,12 +1,12 @@
 <template>
   <div class="control-panel">
-    <div class="panel-header">🗺️ Layer Control</div>
+    <div class="panel-header">Layer Control</div>
     
     <div class="control-item">
       <el-switch
         v-model="isAnalysisMode"
-        active-text="📊 Region Avg Price"
-        inactive-text="📍 All Listings"
+        active-text="Region Avg Price"
+        inactive-text="All Listings"
         @change="onModeChange"
       />
     </div>
@@ -73,7 +73,7 @@ const onIntensityChange = (val) => {
 .legend-area { margin-top: 15px; background: #f8f9fa; padding: 10px; border-radius: 4px; }
 .legend-title { font-size: 12px; color: #666; margin-bottom: 5px; }
 .legend-bar-container { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #666; }
-.color-bar { flex: 1; height: 8px; border-radius: 4px; background: linear-gradient(to right, #445588, #55aa77, #eebb22, #dd4444); } /* 调整颜色以匹配 Binning */
+.color-bar { flex: 1; height: 8px; border-radius: 4px; background: linear-gradient(to right, #445588, #55aa77, #eebb22, #dd4444); }
 .slider-container { margin-top: 10px; }
 .slider-label { font-size: 11px; color: #999; }
 .fade-enter-active, .fade-leave-active { transition: opacity 0.3s; }
