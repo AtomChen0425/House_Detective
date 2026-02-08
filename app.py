@@ -73,7 +73,7 @@ def update_password():
         )
         return jsonify({"status": "success", "message": "Password updated successfully"})
     else:
-        return jsonify({"status": "error", "message": "Old password is incorrect"}), 400
+        return jsonify({"status": "error", "message": "O"}), 400
 # --- 路由 ---
 
 @app.route('/')
@@ -98,7 +98,7 @@ def get_listings():
         "address": 1, "location": 1, "price_history": 1,
         "bedrooms": 1, "bathrooms": 1, "property_type": 1,
         "raw_data.Property.Photo": 1,"raw_data.RelativeDetailsURL":1,
-        "unit_price_per_sqm": 1,
+        "unit_price_per_sqm": 1, "last_updated": 1,
         "_id": 0
     })
     listings = list(cursor)

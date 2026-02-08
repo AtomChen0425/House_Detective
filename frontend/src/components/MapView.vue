@@ -85,7 +85,8 @@ const loadListings = async () => {
         bathrooms: house.bathrooms || '-', // 补回 bathrooms
         type: house.property_type || 'Unknown', // 补回 type
         imageUrl: house.raw_data?.Property?.Photo?.[0]?.HighResPath || 'https://via.placeholder.com/300x200?text=No+Image',
-        property_url: house.raw_data?.RelativeDetailsURL ? `https://www.realtor.ca${house.raw_data.RelativeDetailsURL}` : '#'
+        property_url: house.raw_data?.RelativeDetailsURL ? `https://www.realtor.ca${house.raw_data.RelativeDetailsURL}` : '#',
+        lastUpdated: formatTime(house.last_updated) || 'Unknown'
       };
 
       const priceHistory = house.price_history || [];
@@ -114,6 +115,7 @@ const loadListings = async () => {
         { name: "type", type: "string" },
         { name: "imageUrl", type: "string" },
         { name: "property_url", type: "string" },
+        { name: "lastUpdated", type: "string" },
         ...globalChartFields.map(f => ({ name: f, type: "double" }))
       ],
       renderer: getPointRenderer(), 
@@ -212,7 +214,11 @@ const getPointRenderer = () => ({
   }
 });
 
-
+const formatTime = (timeData) => {
+  if (!timeData) return 'N/A'
+  const date = timeData.$date ? new Date(timeData.$date) : new Date(timeData)
+  return date.toLocaleString()
+}
 const getRichPopupTemplate = (chartFields) => ({
   title: "{address}",
   content: [
@@ -227,7 +233,8 @@ const getRichPopupTemplate = (chartFields) => ({
           <b>Price:</b> <span style="color: #d93025; font-size: 16px;">{price}</span><br>
           <b>Unit Price:</b> {unitPrice} $/m²<br>
           <b>Bedrooms:</b> {bedrooms} <b>Bathrooms:</b> {bathrooms}<br>
-          <b>Type:</b> {type}
+          <b>Type:</b> {type}<br>
+          <b>Last Updated:</b> {lastUpdated}<br>
         </div>
         <div style="margin-top: 10px;">
           <a href="{property_url}" target="_blank" 
