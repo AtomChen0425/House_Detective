@@ -5,7 +5,7 @@ from flask_cors import CORS
 import json
 import datetime
 import os
-
+from passlib.hash import pbkdf2_sha256
 app = Flask(__name__, static_folder='frontend/dist', static_url_path='')
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
@@ -13,6 +13,67 @@ mongo_uri = os.getenv("MONGO_URI", "mongodb://mongo:27017/") #"mongodb://192.168
 client = MongoClient(mongo_uri)
 db = client.House_Analysis_Canada
 
+
+def init_admin():
+    if db.users.count_documents({"username": "admin"}) == 0:
+        hashed_password = pbkdf2_sha256.hash("admin123") # 初始加密密码
+        db.users.insert_one({
+            "username": "admin",
+            "password": hashed_password,
+            "role": "admin",
+            "created_at": datetime.datetime.now()
+        })
+        print("Admin user initialized.")
+
+init_admin()
+
+# --- 登录接口 ---
+@app.route('/api/login', methods=['POST'])
+def login():
+    data = request.json
+    username = data.get('username')
+    password = data.get('password')
+
+    user = db.users.find_one({"username": username})
+    
+
+    if user and pbkdf2_sha256.verify(password, user['password']):
+        return jsonify({
+            "status": "success",
+            "message": "Login successful",
+            "token": "admin-session-token", # 实际生产环境应使用 JWT
+            "user": {"username": user['username'], "role": user['role']}
+        })
+    else:
+        return jsonify({
+            "status": "error", 
+            "message": "username or password error"
+        }), 401
+        
+@app.route('/api/config/update-password', methods=['POST'])
+def update_password():
+    data = request.json
+    # 从请求体中提取 username
+    username = data.get('username') 
+    old_password = data.get('oldPassword')
+    new_password = data.get('newPassword')
+
+    if not username:
+        return jsonify({"status": "error", "message": "Missing username"}), 400
+
+    # 查找指定用户
+    user = db.users.find_one({"username": username})
+    
+    if user and pbkdf2_sha256.verify(old_password, user['password']):
+        # 加密并更新
+        new_hashed = pbkdf2_sha256.hash(new_password)
+        db.users.update_one(
+            {"username": username}, 
+            {"$set": {"password": new_hashed}}
+        )
+        return jsonify({"status": "success", "message": "Password updated successfully"})
+    else:
+        return jsonify({"status": "error", "message": "Old password is incorrect"}), 400
 # --- 路由 ---
 
 @app.route('/')

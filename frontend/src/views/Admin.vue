@@ -2,8 +2,27 @@
   <div class="admin-layout">
     <el-container>
       <el-header class="admin-header">
-        <h2>🕵️‍♀️ House Detective Management</h2>
-        <el-button @click="$router.push('/')">Back To Map</el-button>
+        <h2>House Detective Management</h2>
+        <div class="header-right">
+          <el-button @click="$router.push('/')" style="margin-right: 15px;">Back To Map</el-button>
+          <el-dropdown trigger="hover">
+            <span class="user-info">
+              <el-avatar :icon="UserFilled" :size="30" />
+              <span class="username-text">{{ adminName }}</span>
+              <el-icon class="el-icon--right"><arrow-down /></el-icon>
+            </span>
+            <template #dropdown>
+              <el-dropdown-menu>
+                <el-dropdown-item @click="$router.push('/change-password')">
+                  Update Password
+                </el-dropdown-item>
+                <el-dropdown-item divided @click="handleLogout" style="color: #f56c6c;">
+                  Logout
+                </el-dropdown-item>
+              </el-dropdown-menu>
+            </template>
+          </el-dropdown>
+        </div>
       </el-header>
       
       <el-main>
@@ -175,8 +194,21 @@ import GraphicsLayer from '@arcgis/core/layers/GraphicsLayer';
 import Sketch from '@arcgis/core/widgets/Sketch';
 import * as webMercatorUtils from "@arcgis/core/geometry/support/webMercatorUtils";
 import Graphic from '@arcgis/core/Graphic';
+import { useRouter } from 'vue-router';
+
+import { UserFilled, ArrowDown } from '@element-plus/icons-vue'
 const API_URL = '/api';
 
+const router = useRouter();
+
+const adminName = ref('');
+const handleLogout = () => {
+  // 清除本地存储的登录状态
+  localStorage.removeItem('isAdminAuthenticated');
+  localStorage.removeItem('Username');  
+  ElMessage.success('Successfully logged out');
+  router.push('/login');
+};
 
 // 区域管理
 const regions = ref([])
@@ -184,6 +216,7 @@ const dialogVisible = ref(false)
 const newRegion = ref({ name: '', lat_min: '', lat_max: '', lng_min: '', lng_max: '' })
 
 onMounted(() => {
+  adminName.value = localStorage.getItem('Username')
   fetchCookieConfig()
   fetchRegions()
 })
@@ -391,11 +424,12 @@ const displayStoredRegions = () => {
 
 <style scoped>
 .admin-header {
-  background-color: #004575;
+  background-color: #0D1F62;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 30px;
 }
 .card-header {
   display: flex;
@@ -405,5 +439,26 @@ const displayStoredRegions = () => {
 #adminMapDiv {
   border: 1px solid #ddd;
   border-radius: 4px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  outline: none; 
+}
+
+.username-text {
+  margin: 0 8px;
+  font-size: 14px;
+}
+
+:deep(.el-dropdown-menu__item) {
+  padding: 8px 20px;
 }
 </style>
