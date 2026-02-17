@@ -52,5 +52,6 @@
 - [ ] Advanced filtering (Price, Bed/Bath, Property Type).
 - [ ] User authentication for the Admin panel.
 - [ ] Auto notify user the change of average price.
+- [ ] AI recommends the most suitable properties based on your needs.
 
 ---
