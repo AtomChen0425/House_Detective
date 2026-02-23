@@ -4,6 +4,7 @@
     <LayerControl 
       @toggle-mode="handleLayerToggle" 
       @update-intensity="handleIntensityUpdate"
+      @toggle-poi="handlePoiToggle"
     />
   </div>
 </template>
@@ -15,6 +16,7 @@ import Map from '@arcgis/core/Map';
 import MapView from '@arcgis/core/views/MapView';
 import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
 import Graphic from '@arcgis/core/Graphic';
+import GraphicsLayer from '@arcgis/core/layers/GraphicsLayer'; 
 import axios from 'axios';
 
 const API_URL = '/api';
@@ -23,12 +25,16 @@ let map = null;
 let view = null;
 let housingLayer = null;
 let globalChartFields = []; 
-
+const poiLayers = {
+  highway: new GraphicsLayer({ visible: false, opacity: 0.6 }),
+  supermarket: new GraphicsLayer({ visible: false }),
+  transit_station: new GraphicsLayer({ visible: false })
+};
 onMounted(() => {
   map = new Map({
     basemap: "streets-navigation-vector" 
   });
-
+  map.addMany([poiLayers.highway, poiLayers.transit_station, poiLayers.supermarket]);
   view = new MapView({
     container: "viewDiv",
     map: map,
@@ -37,16 +43,89 @@ onMounted(() => {
   });
 
   loadListings();
-//   view.on("click", async (event) => {
-//   const hit = await view.hitTest(event);
-//   const g = hit.results[0]?.graphic;
-//   if (!g) return;
-
-//   console.log("avg_price_per_sqm:", g.attributes.avg_price_per_sqm);
-//   console.log("attributes:", g.attributes);
-// });
+  loadPOIs();
 });
 
+const loadPOIs = async () => {
+  try {
+    const res = await axios.get(`${API_URL}/pois`);
+    const pois = res.data;
+    
+    if (!pois || pois.length === 0) return;
+
+    pois.forEach(poi => {
+      let graphic;
+      const attributes = {
+        name: poi.name || 'Unknown',
+        category: poi.category
+      };
+
+      const popupTemplate = {
+        title: "{name}",
+        content: "<b>Type:</b> {category}"
+      };
+
+      // 1. 处理点数据 (超市、车站)
+      if (poi.location && poi.location.type === 'Point') {
+        const [lng, lat] = poi.location.coordinates;
+        
+        let symbol;
+        if (poi.category === 'supermarket') {
+          symbol = {
+            type: "simple-marker",
+            color: "#67C23A", 
+            path: "M288 0c6.6 0 12.9 2.7 17.4 7.5l144 152 .5 .5 78.1 0c17.7 0 32 14.3 32 32 0 14.5-9.6 26.7-22.8 30.7L491.1 429.9c-6.5 29.3-32.5 50.1-62.5 50.1l-281.3 0c-30 0-56-20.8-62.5-50.1l-46-207.2c-13.2-3.9-22.8-16.2-22.8-30.7 0-17.7 14.3-32 32-32l78.1 0 .5-.5 144-152C275.1 2.7 281.4 0 288 0zm0 58.9L192.2 160 383.8 160 288 58.9zM208 264c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112zm80-24c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm128 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112z",
+            size: 16,
+            // outline: { color: "white", width: 1.5 } 
+          };
+        } else if (poi.category === 'transit_station') {
+          symbol = {
+            type: "simple-marker",
+            color: "#409EFF", 
+            path: "M320 0H192C86 0 0 86 0 192v192c0 82 51.5 151.7 122.9 178.5L92 613.8c-7.6 17.5 7.1 36.3 25.4 31.8l103.4-25.9h66.5l103.4 25.9c18.3 4.6 33-14.3 25.4-31.8l-30.9-51.3C460.5 535.7 512 466 512 384V192C512 86 426 0 320 0zM128 416c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm256 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zM416 256H96V128h320v128z",
+            size: 16,
+            // outline: { color: "white", width: 1.5 }
+          };
+        }
+
+        graphic = new Graphic({
+          geometry: { type: "point", longitude: lng, latitude: lat },
+          symbol: symbol,
+          attributes: attributes,
+          popupTemplate: popupTemplate
+        });
+      } 
+      // 2. 处理线数据 (高速公路)
+      else if (poi.location && poi.location.type === 'LineString') {
+        // ArcGIS 要求 paths 是一个二维数组的数组: [ [ [lon, lat], [lon, lat] ] ]
+        graphic = new Graphic({
+          geometry: { type: "polyline", paths: [poi.location.coordinates] },
+          symbol: { type: "simple-line", color: "#F56C6C", width: 3, style: "solid" },
+          attributes: attributes,
+          popupTemplate: popupTemplate
+        });
+      }
+
+      // 放入对应的图层
+      if (graphic) {
+        if (poi.category === 'supermarket') poiLayers.supermarket.add(graphic);
+        else if (poi.category === 'transit_station') poiLayers.transit_station.add(graphic);
+        else if (poi.category === 'highway') poiLayers.highway.add(graphic);
+      }
+    });
+    
+    console.log("POI data loaded successfully.");
+  } catch (e) {
+    console.error("Failed to load POIs:", e);
+  }
+};
+
+// 新增：处理开关切换逻辑
+const handlePoiToggle = ({ type, isVisible }) => {
+  if (poiLayers[type]) {
+    poiLayers[type].visible = isVisible;
+  }
+};
 const loadListings = async () => {
   try {
     const res = await axios.get(`${API_URL}/listings`);

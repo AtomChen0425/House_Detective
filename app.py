@@ -27,6 +27,18 @@ def init_admin():
 
 init_admin()
 
+@app.route('/api/pois', methods=['GET'])
+def get_pois():
+    """获取所有 POI (超市、交通站、高速公路) 数据"""
+    try:
+        # 查询 toronto_pois 集合中的所有数据
+        cursor = db.toronto_pois.find({}, {"_id": 0})
+        pois = list(cursor)
+        
+        return json.loads(json_util.dumps(pois))
+    except Exception as e:
+        print(f"Error fetching POIs: {e}")
+        return jsonify({"error": "Failed to fetch POI data"}), 500
 # --- 登录接口 ---
 @app.route('/api/login', methods=['POST'])
 def login():

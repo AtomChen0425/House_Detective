@@ -35,16 +35,46 @@
         </div>
       </div>
     </transition>
+
+    <div class="panel-header" style="margin-top: 20px;">POI Layers</div>
+    <div class="control-item">
+      <el-switch
+        v-model="poiSwitches.supermarket"
+        active-text="🛒 Supermarkets"
+        @change="(val) => onPoiToggle('supermarket', val)"
+      />
+    </div>
+    <div class="control-item">
+      <el-switch
+        v-model="poiSwitches.transit_station"
+        active-text="🚇 Transit Stations"
+        @change="(val) => onPoiToggle('transit_station', val)"
+      />
+    </div>
+    <div class="control-item">
+      <el-switch
+        v-model="poiSwitches.highway"
+        active-text="🛣️ Highways"
+        @change="(val) => onPoiToggle('highway', val)"
+      />
+    </div>
+
   </div>
 </template>
 
 <script setup>
-import { ref, defineEmits } from 'vue';
+import { ref, reactive, defineEmits } from 'vue';
 
 const emit = defineEmits(['toggle-mode', 'update-intensity']);
 
 const isAnalysisMode = ref(false);
 const maxPrice = ref(15000); 
+
+const poiSwitches = reactive({
+  supermarket: false,
+  transit_station: false,
+  highway: false
+});
 
 const onModeChange = (val) => {
   emit('toggle-mode', val);
@@ -52,6 +82,10 @@ const onModeChange = (val) => {
 
 const onIntensityChange = (val) => {
   emit('update-intensity', val);
+};
+
+const onPoiToggle = (type, isVisible) => {
+  emit('toggle-poi', { type, isVisible });
 };
 </script>
 
